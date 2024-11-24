@@ -1,0 +1,7 @@
+* react-miss
+
+** Available Scripts
+
+*** start: `pnpm tauri dev`
+
+*** build: `pnpm run build`

@@ -10,7 +10,7 @@ const AppRoot = (props: IProps, state: IState) => {
 
   return (
     <section>
-      <h1>~~~ AppRoot ~~~</h1>
+      <h1>~~~ app root ~~~</h1>
     </section>
   );
 };
