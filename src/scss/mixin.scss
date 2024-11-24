@@ -1,0 +1,69 @@
+@import './color.scss';
+
+/* primary: #F72E96FF -- rgba(247, 46, 150, 1) */
+@mixin primary($opacity: 1) { color: rgba(247, 46, 150, $opacity); }
+@mixin primary-bg($opacity: 1) { background-color: rgba(247, 46, 150, $opacity); }
+
+/* secondary: #2979FFFF -- rgba(41, 121, 255, 1) */
+@mixin secondary($opacity: 1) { color: rgba(41, 121, 255, $opacity); }
+@mixin secondary-bg($opacity: 1) { background-color: rgba(41, 121, 255, $opacity); }
+
+/* success: #388E3CFF -- rgba(56, 142, 60, 1) */
+@mixin success($opacity: 1) { color: rgba(56, 142, 60, $opacity); }
+@mixin success-bg($opacity: 1) { background-color: rgba(56, 142, 60, $opacity); }
+
+/* info: #8470FFFF -- rgba(132, 112, 255, 1) */
+@mixin info($opacity: 1) { color: rgba(132, 112, 255, $opacity); }
+@mixin info-bg($opacity: 1) { background-color: rgba(132, 112, 255, $opacity); }
+
+/* warning: #FFA500FF -- rgba(255, 165, 0, 1) */
+@mixin warning($opacity: 1) { color: rgba(255, 165, 0, $opacity); }
+@mixin warning-bg($opacity: 1) { background-color: rgba(255, 165, 0, $opacity); }
+
+/* error: #FF1744FF -- rgba(255, 23, 68, 1) */
+@mixin error($opacity: 1) { color: rgba(255, 23, 68, $opacity); }
+@mixin error-bg($opacity: 1) { background-color: rgba(255, 23, 68, $opacity); }
+
+/* oliver: #B3EE3AFF -- rgba(179, 238, 58, 1) */
+@mixin oliver($opacity: 1) { color: rgba(179, 238, 58, $opacity); }
+@mixin oliver-bg($opacity: 1) { background-color: rgba(179, 238, 58, $opacity); }
+
+/* green: #4EEE94FF -- rgba(78, 238, 148, 1) */
+@mixin green($opacity: 1) { color: rgba(78, 238, 148, $opacity); }
+@mixin green-bg($opacity: 1) { background-color: rgba(78, 238, 148, $opacity); }
+
+/* tomato: #FF6347FF -- rgba(255, 99, 71, 1) */
+@mixin tomato($opacity: 1) { color: rgba(255, 99, 71, $opacity); }
+@mixin tomato-bg($opacity: 1) { background-color: rgba(255, 99, 71, $opacity); }
+
+/* purple: #651FFFFF -- rgba(101, 31, 255, 1) */
+@mixin purple($opacity: 1) { color: rgba(101, 31, 255, $opacity); }
+@mixin purple-bg($opacity: 1) { background-color: rgba(101, 31, 255, $opacity); }
+
+/* wheat: #EED8AEFF -- rgba(238, 216, 174, 1) */
+@mixin wheat($opacity: 1) { color: rgba(238, 216, 174, $opacity); }
+@mixin wheat-bg($opacity: 1) { background-color: rgba(238, 216, 174, $opacity); }
+
+/* magenta: #E0EF -- rgba(238, 0, 238, 1) */
+@mixin magenta($opacity: 1) { color: rgba(238, 0, 238, $opacity); }
+@mixin magenta-bg($opacity: 1) { background-color: rgba(238, 0, 238, $opacity); }
+
+/* black: #050505FF -- rgba(5, 5, 5, 1) */
+@mixin black($opacity: 1) { color: rgba(5, 5, 5, $opacity); }
+@mixin black-bg($opacity: 1) { background-color: rgba(5, 5, 5, $opacity); }
+
+/* dark: #313131FF -- rgba(33, 33, 33, 1) */
+@mixin dark($opacity: 1) { color: rgba(33, 33, 33, $opacity); }
+@mixin dark-bg($opacity: 1) { background-color: rgba(33, 33, 33, $opacity); }
+
+/* grey: #333F -- rgba(51, 51, 51, 1) */
+@mixin grey($opacity: 1) { color: rgba(51, 51, 51, $opacity); }
+@mixin grey-bg($opacity: 1) { background-color: rgba(51, 51, 51, $opacity); }
+
+/* dim: #616161FF -- rgba(97, 97, 97, 1) */
+@mixin dim($opacity: 1) { color: rgba(97, 97, 97, $opacity); }
+@mixin dim-bg($opacity: 1) { background-color: rgba(97, 97, 97, $opacity); }
+
+/* white: #FAFAFAFF -- rgba(250, 250, 250, 1) */
+@mixin white($opacity: 1) { color: rgba(250, 250, 250, $opacity); }
+@mixin white-bg($opacity: 1) { background-color: rgba(250, 250, 250, $opacity); }

@@ -1,0 +1,40 @@
+@import './color.scss';
+@import './mixin.scss';
+
+html {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @include white(1);
+  @include dark-bg(1);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: Ubuntu, 'Open Sans', 'PingFang SC', system-ui, sans-serif;
+  letter-spacing: 0.01rem;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: hidden;
+}
+
+::selection {
+  @include white(1);
+  @include magenta-bg(1);
+}

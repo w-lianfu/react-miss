@@ -2,7 +2,7 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import reportWebVitals from './reportWebVitals';
-import App from './App';
+import AppRoot from './container/app-root';
 
 const root = createRoot(
   document.getElementById('root') as HTMLElement,
@@ -10,7 +10,7 @@ const root = createRoot(
 
 root.render(
   <StrictMode>
-    <App />
+    <AppRoot />
   </StrictMode>,
 );
 
