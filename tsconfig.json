@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +19,39 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "inlineSourceMap": false,
+    "declarationMap": false,
+    "incremental": true,
+    "sourceMap": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@tauri/*": ["src-tauri/*"],
+      "@src/*": ["src/*"],
+      "@api/*": ["src/api/*"],
+      "@comp/*": ["src/component/*"],
+      "@con/*": ["src/container/*"],
+      "@core/*": ["src/core/*"],
+      "@db/*": ["src/db/*"],
+      "@i18n/*": ["src/i18n/*"],
+      "@lib/*": ["src/lib/*"],
+      "@page/*": ["src/page/*"],
+      "@scss/*": ["src/scss/*"],
+      "@service/*": ["src/service/*"],
+      "@static/*": ["src/static/*"],
+      "@image/*": ["src/static/image/*"],
+      "@icon/*": ["src/static/icon/*"],
+      "@store/*": ["src/store/*"],
+      "@styled/*": ["src/styled/*"],
+      "@theme/*": ["src/theme/*"],
+      "@tool/*": ["src/tool/*"],
+      "@util/*": ["src/util/*"],
+    },
   },
   "include": [
-    "src"
-  ]
+    "src",
+  ],
 }

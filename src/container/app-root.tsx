@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import '../scss/index.scss';
+
 interface IProps {}
 interface IState {}
 

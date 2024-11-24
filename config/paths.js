@@ -18,7 +18,7 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 const publicUrlOrPath = getPublicUrlOrPath(
   process.env.NODE_ENV === 'development',
   require(resolveApp('package.json')).homepage,
-  process.env.PUBLIC_URL
+  process.env.PUBLIC_URL,
 );
 
 const buildPath = process.env.BUILD_PATH || 'build';
@@ -40,7 +40,7 @@ const moduleFileExtensions = [
 // Resolve file paths in the same order as webpack
 const resolveModule = (resolveFn, filePath) => {
   const extension = moduleFileExtensions.find(extension =>
-    fs.existsSync(resolveFn(`${filePath}.${extension}`))
+    fs.existsSync(resolveFn(`${filePath}.${extension}`)),
   );
 
   if (extension) {
@@ -70,8 +70,28 @@ module.exports = {
   appTsBuildInfoFile: resolveApp('node_modules/.cache/tsconfig.tsbuildinfo'),
   swSrc: resolveModule(resolveApp, 'src/service-worker'),
   publicUrlOrPath,
+  // user defined
+  tauri: resolveApp('src-tauri'),
+  src: resolveApp('src'),
+  api: resolveApp('src/api'),
+  comp: resolveApp('src/component'),
+  con: resolveApp('src/container'),
+  core: resolveApp('src/core'),
+  db: resolveApp('src/db'),
+  docs: resolveApp('src/docs'),
+  i18n: resolveApp('src/i18n'),
+  lib: resolveApp('src/lib'),
+  page: resolveApp('src/page'),
+  scss: resolveApp('src/scss'),
+  service: resolveApp('src/service'),
+  static: resolveApp('src/static'),
+  image: resolveApp('src/static/image'),
+  icon: resolveApp('src/static/icon'),
+  store: resolveApp('src/store'),
+  styled: resolveApp('src/styled'),
+  theme: resolveApp('src/theme'),
+  tool: resolveApp('src/tool'),
+  util: resolveApp('src/util'),
 };
-
-
 
 module.exports.moduleFileExtensions = moduleFileExtensions;
