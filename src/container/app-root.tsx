@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 
 import '@scss/index.scss';
+import AppTheme from './app-theme';
 import Theme from '@theme/index';
-import Home from '@page/home/index';
+import AppPage from './app-page';
 
 interface IProps {}
 interface IState {}
@@ -14,9 +15,9 @@ const AppRoot = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <ThemeProvider theme={Theme}>
-      <Home />
-    </ThemeProvider>
+    <AppTheme>
+      <AppPage />
+    </AppTheme>
   );
 };
 
