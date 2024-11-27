@@ -93,6 +93,7 @@ const Theme = createTheme({
       fontSize: '1.4rem',
       lineHeight: 1.5,
       letterSpacing: '0.02rem',
+      textTransform: 'none',
     },
     subtitle1: {
       fontSize: '1.4rem',
@@ -157,8 +158,192 @@ const Theme = createTheme({
           flexDirection: 'column',
           alignItems: 'flex-start',
           backgroundColor: Color.white(1),
+
+          '& .MuiBox-root': { position: 'relative' },
         },
       },
+    },
+    MuiStack: {
+      defaultProps: { component: 'section' },
+      styleOverrides: {
+        root: { position: 'relative' },
+      },
+    },
+    MuiSpeedDial: {
+      styleOverrides: {
+        root: {
+          position: 'relative',
+
+          '& .MuiSpeedDial-actions': {
+            marginBottom: 0,
+            paddingBottom: '1.2rem',
+          },
+          '& .MuiSpeedDial-fab': {
+            position: 'relative',
+            width: '5.6rem',
+            height: '5.6rem',
+          },
+          '& .MuiSpeedDialAction-fab': {
+            position: 'relative',
+            width: '4.6rem',
+            height: '4.6rem',
+            margin: '0.8rem',
+            fontSize: '2rem',
+            color: Color.primary(1),
+            backgroundColor: Color.white(1),
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        textPrimary: {
+          backgroundColor: Color.primary(0.2),
+          '&:hover': { backgroundColor: Color.primary(0.3) },
+        },
+        textSecondary: {
+          backgroundColor: Color.secondary(0.2),
+          '&:hover': { backgroundColor: Color.secondary(0.3) },
+        },
+        textSuccess: {
+          backgroundColor: Color.success(0.2),
+          '&:hover': { backgroundColor: Color.success(0.3) },
+        },
+        textInfo: {
+          backgroundColor: Color.info(0.2),
+          '&:hover': { backgroundColor: Color.info(0.3) },
+        },
+        textWarning: {
+          backgroundColor: Color.warning(0.2),
+          '&:hover': { backgroundColor: Color.warning(0.3) },
+        },
+        textError: {
+          backgroundColor: Color.error(0.2),
+          '&:hover': { backgroundColor: Color.error(0.3) },
+        },
+      },
+      variants: [
+        {
+          props: {
+            variant: 'dashed',
+            color: 'primary',
+          },
+          style: {
+            color: Color.primary(1),
+            border: `0.1rem dashed ${Color.primary(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'secondary',
+          },
+          style: {
+            color: Color.secondary(1),
+            border: `0.1rem dashed ${Color.secondary(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'success',
+          },
+          style: {
+            color: Color.success(1),
+            border: `0.1rem dashed ${Color.success(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'info',
+          },
+          style: {
+            color: Color.info(1),
+            border: `0.1rem dashed ${Color.info(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'warning',
+          },
+          style: {
+            color: Color.warning(1),
+            border: `0.1rem dashed ${Color.warning(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'error',
+          },
+          style: {
+            color: Color.error(1),
+            border: `0.1rem dashed ${Color.error(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'oliver',
+          },
+          style: {
+            color: Color.oliver(1),
+            border: `0.1rem dashed ${Color.oliver(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'green',
+          },
+          style: {
+            color: Color.green(1),
+            border: `0.1rem dashed ${Color.green(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'black',
+          },
+          style: {
+            color: Color.black(1),
+            border: `0.1rem dashed ${Color.black(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'dark',
+          },
+          style: {
+            color: Color.dark(1),
+            border: `0.1rem dashed ${Color.dark(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'gray',
+          },
+          style: {
+            color: Color.gray(1),
+            border: `0.1rem dashed ${Color.gray(1)}`,
+          },
+        },
+        {
+          props: {
+            variant: 'dashed',
+            color: 'white',
+          },
+          style: {
+            color: Color.white(1),
+            border: `0.1rem dashed ${Color.white(1)}`,
+          },
+        },
+      ],
     },
   },
 });

@@ -35,31 +35,34 @@
         ev.stopPropagation();
         if (ev.key === 'r') location.reload();
         else if (ev.key === 'G') {
+          // Scroll to page end
           document.documentElement.scrollTo({
             left: 0,
             top: document.body.clientHeight,
             behavior: 'smooth',
           });
         } else if (ev.key === 'g') {
+          // Scroll to page top
           document.documentElement.scrollTo({
             top: 0,
             left: 0,
             behavior: 'smooth',
           });
         } else if (ev.key === 'j') {
+          // scroll down
           document.documentElement.scrollBy({
             top: 100,
             left: 0,
             behavior: 'smooth',
           });
         } else if (ev.key === 'k') {
+          // scroll up
           document.documentElement.scrollBy({
             top: -100,
             left: 0,
             behavior: 'smooth',
           });
         }
-        console.log('ev -- ', ev);
       };
 
       /* rem字体自适应 */

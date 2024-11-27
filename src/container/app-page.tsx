@@ -2,6 +2,7 @@ import React, { useEffect, SyntheticEvent } from 'react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import AppDial from './app-dial';
 import Home from '@page/home/index';
 import AppTop from '@comp/app-top/index';
 import AppStatus from '@comp/app-status/index';
@@ -38,6 +39,7 @@ const AppPage = (props: IProps, state: IState) => {
         <AppRight />
       </DPaper>
       <AppStatus />
+      <AppDial />
     </CPaper>
   );
 };
