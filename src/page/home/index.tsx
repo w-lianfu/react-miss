@@ -3,12 +3,16 @@ import { Paper, Box, Button, Typography, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 
+import Color from '@tool/color';
+import Size from '@tool/size';
+
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
   display: 'flex',
-  height: '100%',
+  position: 'relative',
+  margin: `${Size.topHeight} ${Size.rightWidth} ${Size.statusHeight} ${Size.menuWidth}`,
   overflowY: 'auto',
 });
 
@@ -151,6 +155,7 @@ const Home = (props: IProps, state: IState) => {
       <h1>~~~ Home ~~~</h1>
       <h1>~~~ Home ~~~</h1>
       <h1>~~~ End End End ~~~</h1>
+      <Button>End End</Button>
     </DPaper>
   );
 };

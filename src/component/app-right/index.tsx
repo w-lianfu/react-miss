@@ -3,13 +3,20 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 
+import Color from '@tool/color';
+import Size from '@tool/size';
+
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
   display: 'flex',
-  width: '100%',
-  height: '100%',
+  position: 'fixed',
+  right: 0,
+  top: Size.topHeight,
+  bottom: Size.statusHeight,
+  width: Size.rightWidth,
+  zIndex: 50,
   backgroundColor: purple.A400,
 });
 
