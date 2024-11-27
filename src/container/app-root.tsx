@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
-import { ThemeProvider } from '@mui/material/styles';
+import React, { useEffect, KeyboardEvent } from 'react';
 
 import '@scss/index.scss';
 import AppTheme from './app-theme';
-import Theme from '@theme/index';
 import AppPage from './app-page';
 
 interface IProps {}
@@ -11,6 +9,13 @@ interface IState {}
 
 const AppRoot = (props: IProps, state: IState) => {
   useEffect(() => {
+    console.log('app root page...');
+    document.body.addEventListener('keydown', (ev: any) => {
+      ev.stopPropagation();
+      // Press `r` reload current page.
+      // if (ev.keyCode === 82) location.reload();
+    }, true);
+
     return () => {};
   }, []);
 

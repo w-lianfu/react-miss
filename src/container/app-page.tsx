@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, SyntheticEvent } from 'react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
@@ -20,6 +20,7 @@ const CPaper = styled(Paper)({
 const DPaper = styled(Paper)({
   display: 'grid',
   gridTemplateColumns: '1rem 1fr 1rem',
+  height: '100%',
   overflow: 'hidden',
 });
 

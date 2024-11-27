@@ -7,17 +7,29 @@ interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
-  display: 'grid',
+  display: 'flex',
+  height: '100%',
   overflowY: 'auto',
 });
 
 const Home = (props: IProps, state: IState) => {
+  const onKeyDown = (ev: any) => {
+    ev.stopPropagation();
+    console.log('home ev -- ', ev);
+    // Press `j` make page scroll down.
+    // if (ev.keyCode === 74) window.scrollBy({
+    //   top: 10,
+    //   left: 0,
+    //   behavior: 'smooth',
+    // });
+  };
+
   useEffect(() => {
     return () => {};
   }, []);
 
   return (
-    <DPaper>
+    <DPaper onKeyDown={onKeyDown}>
       <Typography variant="h6">可琪, I miss you...</Typography>
       <Box>
         <Button variant="contained" color="primary">可琪, I miss you</Button>

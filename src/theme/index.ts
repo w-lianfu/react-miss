@@ -156,6 +156,7 @@ const Theme = createTheme({
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
+          backgroundColor: Color.white(1),
         },
       },
     },
