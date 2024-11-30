@@ -66,7 +66,8 @@ const Theme = createTheme({
   },
   typography: {
     htmlFontSize: 10,
-    fontFamily: '"Noto Sans", "Droid Sans Mono", "PingFang SC"',
+    fontFamily: '"-apple-system", "BlinkMacSystemFont", "Noto Sans",\
+      "Droid Sans Mono", "PingFang SC", "system-ui"',
     button: {
       fontSize: '1.4rem',
       fontWeight: 500,
