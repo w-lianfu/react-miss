@@ -1,5 +1,5 @@
 const Size = {
-  topHeight: '1rem',
+  topHeight: '2rem',
   statusHeight: '2rem',
   menuWidth: '5rem',
   rightWidth: '0.2rem',

@@ -211,7 +211,7 @@ const Theme = createTheme({
           padding: '0.8rem',
           backgroundColor: Color.white(1),
 
-          '&:hover': { backgroundColor: grey[300] },
+          '&:hover': { backgroundColor: grey[400] },
         },
       },
     },

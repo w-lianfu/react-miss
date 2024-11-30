@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { deepOrange } from '@mui/material/colors';

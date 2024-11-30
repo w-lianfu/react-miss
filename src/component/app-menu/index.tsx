@@ -23,7 +23,7 @@ const DPaper = styled(Paper)({
   display: 'flex',
   justifyContent: 'space-between',
   zIndex: 50,
-  backgroundColor: blue.A400,
+  backgroundColor: Color.primary(1),
 });
 
 const DBox = styled(Box)({
