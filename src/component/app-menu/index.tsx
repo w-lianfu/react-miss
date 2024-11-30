@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Paper, Box, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
@@ -9,6 +9,7 @@ import {
 
 import Color from '@tool/color';
 import Size from '@tool/size';
+import lock, { toggleLock } from '@con/store/app-lock';
 
 interface IProps {}
 interface IState {}
@@ -63,7 +64,7 @@ const AppMenu = (props: IProps, state: IState) => {
         </DIconButton>
       </DBox>
       <EBox>
-        <DIconButton color="primary">
+        <DIconButton color="primary" onClick={() => toggleLock(true)}>
           <MdLock />
         </DIconButton>
         <DIconButton color="primary">

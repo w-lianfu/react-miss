@@ -1,4 +1,5 @@
 import React, { useEffect, useState, SyntheticEvent } from 'react';
+import { observer } from 'mobx-react-lite';
 import { styled } from '@mui/material/styles';
 import {
   Stack, Button, SpeedDial, SpeedDialIcon, SpeedDialAction,
@@ -9,6 +10,7 @@ import {
   MdDashboard, MdArrowUpward, MdArrowDownward,
 } from 'react-icons/md';
 
+import lock, { toggleLock } from './store/app-lock';
 import Color from '@tool/color';
 import Size from '@tool/size';
 
@@ -24,11 +26,9 @@ const DStack = styled(Stack)({
 
 const actions = [
   { icon: <MdDashboard />, name: 'Dashboard' },
-  { icon: <MdHome />, name: 'Home' },
   { icon: <MdLock />, name: 'Lock' },
-  { icon: <MdArrowDownward />, name: 'Bottom' },
   { icon: <MdRefresh />, name: 'Refresh' },
-  { icon: <MdStar />, name: 'Star' },
+  { icon: <MdArrowDownward />, name: 'Bottom' },
   { icon: <MdArrowUpward />, name: 'Top' },
 ];
 
@@ -41,6 +41,7 @@ const AppDial = (props: IProps, state: IState) => {
 
   const onDial = (ev: SyntheticEvent, name: string) => {
     if (name === 'Refresh') location.reload();
+    else if (name === 'Lock') toggleLock(true);
     else if (name === 'Top') {
       // Scroll to page top
       document.documentElement.scrollTo({
@@ -82,4 +83,4 @@ const AppDial = (props: IProps, state: IState) => {
   );
 };
 
-export default AppDial;
+export default observer(AppDial);

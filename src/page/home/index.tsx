@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button, Typography, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
@@ -81,8 +82,6 @@ const Home = (props: IProps, state: IState) => {
         <Typography variant="h4">可琪, I miss you...</Typography>
         <Typography variant="h5">可琪, I miss you...</Typography>
         <Typography variant="h6">可琪, I miss you...</Typography>
-        <Typography variant="subtitle1">可琪, I miss you...</Typography>
-        <Typography variant="subtitle2">可琪, I miss you...</Typography>
         <Typography variant="body1">可琪, I miss you...</Typography>
         <Typography variant="body2">可琪, I miss you...</Typography>
         <Typography variant="caption">可琪, I miss you...</Typography>
@@ -90,9 +89,30 @@ const Home = (props: IProps, state: IState) => {
         <Typography variant="subtitle1">可琪, I miss you...</Typography>
         <Typography variant="subtitle2">可琪, I miss you...</Typography>
       </Stack>
+      <Stack>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 我不想再前往宫殿了，我只愿停留在有你的客栈 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h5">~~~ 诗为她而作，泪为你而流 ~~~</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+        <Typography variant="h6">一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊</Typography>
+      </Stack>
       <Button>End End</Button>
     </DPaper>
   );
 };
 
-export default Home;
+export default observer(Home);
