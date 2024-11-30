@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import {
   red, purple, pink, blue, green, orange,
-  deepPurple, deepOrange,
+  deepPurple, deepOrange, grey,
 } from '@mui/material/colors';
 
 import Color from '@tool/color';
@@ -160,7 +160,10 @@ const Theme = createTheme({
           alignItems: 'flex-start',
           backgroundColor: Color.white(1),
 
-          '& .MuiBox-root': { position: 'relative' },
+          '& .MuiBox-root': {
+            position: 'relative',
+            display: 'flex',
+          },
         },
       },
     },
@@ -174,6 +177,7 @@ const Theme = createTheme({
       styleOverrides: {
         root: {
           position: 'relative',
+          width: '5.6rem',
 
           '& .MuiSpeedDial-actions': {
             marginBottom: 0,
@@ -193,6 +197,16 @@ const Theme = createTheme({
             color: Color.primary(1),
             backgroundColor: Color.white(1),
           },
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          padding: '0.8rem',
+          backgroundColor: Color.white(1),
+
+          '&:hover': { backgroundColor: grey[300] },
         },
       },
     },

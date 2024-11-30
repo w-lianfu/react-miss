@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Paper, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { deepOrange } from '@mui/material/colors';
 
@@ -9,14 +9,17 @@ import Size from '@tool/size';
 interface IProps {}
 interface IState {}
 
-const DPaper = styled(Paper)({
-  display: 'flex',
+const DBox = styled(Box)({
   position: 'fixed',
   bottom: 0,
   left: 0,
   width: '100%',
   height: Size.statusHeight,
+  display: 'flex',
+  justifyContent: 'center',
   zIndex: 50,
+  fontSize: '1.2rem',
+  color: Color.white(1),
   backgroundColor: deepOrange.A400,
 });
 
@@ -26,7 +29,7 @@ const AppStatus = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DPaper />
+    <DBox>你是病，渗入血液，侵入骨髓，扎进心底，百年缠身...</DBox>
   );
 };
 

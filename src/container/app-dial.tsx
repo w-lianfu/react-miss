@@ -9,13 +9,16 @@ import {
   MdDashboard, MdArrowUpward, MdArrowDownward,
 } from 'react-icons/md';
 
+import Color from '@tool/color';
+import Size from '@tool/size';
+
 interface IProps {}
 interface IState {}
 
 const DStack = styled(Stack)({
   position: 'fixed',
-  bottom: '1rem',
-  right: '1rem',
+  bottom: Size.statusHeight,
+  right: Size.rightWidth,
   display: 'flex',
 });
 
