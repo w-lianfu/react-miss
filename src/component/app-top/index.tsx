@@ -32,7 +32,7 @@ const AppTop = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>一滴泪，滴入河流，汇入大海，凝入云朵，化为雨滴，落在你的脸颊...</DBox>
+    <DBox>你是病, 渗入血液, 侵入骨髓, 扎进心底, 百年缠身...</DBox>
   );
 };
 

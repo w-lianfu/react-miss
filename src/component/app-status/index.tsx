@@ -32,7 +32,7 @@ const AppStatus = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>你是病，渗入血液，侵入骨髓，扎进心底，百年缠身...</DBox>
+    <DBox>我不想再前往宫殿了, 我只愿停留在有你的客栈...</DBox>
   );
 };
 
