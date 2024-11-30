@@ -163,6 +163,7 @@ const Theme = createTheme({
           '& .MuiBox-root': {
             position: 'relative',
             display: 'flex',
+            flexWrap: 'wrap',
           },
         },
       },

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { purple } from '@mui/material/colors';
+import { purple, grey } from '@mui/material/colors';
 
 import Color from '@tool/color';
 import Size from '@tool/size';
@@ -17,7 +17,7 @@ const DPaper = styled(Paper)({
   bottom: Size.statusHeight,
   width: Size.rightWidth,
   zIndex: 50,
-  backgroundColor: purple.A400,
+  backgroundColor: Color.black(1),
 });
 
 const AppRight = (props: IProps, state: IState) => {

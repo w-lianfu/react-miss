@@ -17,10 +17,12 @@ const DBox = styled(Box)({
   height: Size.statusHeight,
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center',
   zIndex: 50,
+  lineHeight: 1,
   fontSize: '1.2rem',
   color: Color.white(1),
-  backgroundColor: deepOrange.A400,
+  backgroundColor: Color.black(1),
 });
 
 const AppStatus = (props: IProps, state: IState) => {
