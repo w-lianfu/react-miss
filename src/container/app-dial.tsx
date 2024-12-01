@@ -64,7 +64,7 @@ const AppDial = (props: IProps, state: IState) => {
   };
 
   const onClose = (ev: SyntheticEvent) => {
-    setOpen(false);
+    setOpen(true);
   };
 
   return (

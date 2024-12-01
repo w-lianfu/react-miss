@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import { replace } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { Paper, Stack, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
-import AppPage from '@con/app-page';
 
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({});
-
 const DStack = styled(Stack)({});
 
 const Dashboard = (props: IProps, state: IState) => {
   useEffect(() => {
+    console.log('dashboard');
+    replace('/');
+
     return () => {};
   }, []);
 

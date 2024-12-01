@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
 import {
   MdDashboard, MdHome, MdPark, MdLock, MdLockOpen,
-  MdToken, MdSettings, MdSecurity,
+  MdToken, MdSettings, MdSecurity, MdFavorite,
 } from 'react-icons/md';
 
 import Color from '@tool/color';
@@ -56,14 +56,13 @@ const AppMenu = (props: IProps, state: IState) => {
     <DPaper>
       <DBox>
         <Link to="/">
-          <DIconButton color="primary">
-            <MdDashboard />
-          </DIconButton>
+          <DIconButton color="primary"><MdDashboard /></DIconButton>
         </Link>
         <Link to="/home">
-          <DIconButton color="primary">
-            <MdHome />
-          </DIconButton>
+          <DIconButton color="primary"><MdHome /></DIconButton>
+        </Link>
+        <Link to="/love">
+          <DIconButton color="primary"><MdFavorite /></DIconButton>
         </Link>
       </DBox>
       <EBox>
@@ -71,14 +70,10 @@ const AppMenu = (props: IProps, state: IState) => {
           <MdLock />
         </DIconButton>
         <Link to="/security">
-          <DIconButton color="primary">
-            <MdSecurity />
-          </DIconButton>
+          <DIconButton color="primary"><MdSecurity /></DIconButton>
         </Link>
         <Link to="/setting">
-          <DIconButton color="primary">
-            <MdSettings />
-          </DIconButton>
+          <DIconButton color="primary"><MdSettings /></DIconButton>
         </Link>
       </EBox>
     </DPaper>

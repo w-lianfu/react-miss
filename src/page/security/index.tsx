@@ -22,6 +22,13 @@ const Security = (props: IProps, state: IState) => {
   return (
     <>
       <DStack>
+        <Button variant="dashed" color="dark">昨天走了, 把最低温度留给了今天...</Button>
+        <Button variant="contained" color="secondary">很喜欢很喜欢一个人, 却不能在一起</Button>
+        <Button variant="contained" color="warning">是怎样的心情?</Button>
+        <Button variant="contained" color="black">没有后悔, 没有遗憾</Button>
+        <Button variant="contained" color="warning">只有对她止不住的思念...</Button>
+      </DStack>
+      <DStack>
         <Button variant="dashed" color="black">我不想再前往宫殿了</Button>
         <Button variant="dashed" color="black">我只愿停留在有你的客栈...</Button>
         <Button variant="contained" color="primary">一滴泪</Button>
