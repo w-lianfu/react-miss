@@ -31,6 +31,29 @@ const Home = (props: IProps, state: IState) => {
   return (
     <DPaper>
       <DStack>
+        <Button variant="contained" color="secondary">愿为一条鱼, 探索海洋之秘</Button>
+        <Button variant="contained" color="warning">愿为一只鹰, 遨游苍穹之空</Button>
+        <Button variant="contained" color="dark">愿为一道门, 穿越宇宙之边</Button>
+        <Button variant="contained" color="error">愿为时光机, 开启时空之门...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="black">你是夏天的棉袄, 沸血, 煮心, 烧脑...</Button>
+        <Button variant="contained" color="warning">心中有你, 如影随形</Button>
+        <Button variant="contained" color="error">梦中有你, 朝夕相伴</Button>
+        <Button variant="contained" color="black">未来有你, 事倍功半</Button>
+        <Button variant="contained" color="secondary">时间如你, 不能相见...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="black">每天醒来为了什么</Button>
+        <Button variant="dashed" color="black">伐木造船, 驶向有你的彼岸...</Button>
+        <Button variant="contained" color="primary">挫其志</Button>
+        <Button variant="contained" color="black">锻其心</Button>
+        <Button variant="contained" color="secondary">阻其行</Button>
+        <Button variant="contained" color="dark">厉其言</Button>
+        <Button variant="contained" color="warning">而屹立不倒...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="dark">曲一首, 解烦忧, 犹如一醉解千愁...</Button>
         <Button variant="contained" color="primary">独自走在一起走过的长廊</Button>
         <Button variant="contained" color="secondary">仿佛你就在我的身边</Button>
         <Button variant="contained" color="success">转身想要牵你的手</Button>
@@ -39,7 +62,8 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="error">那只是曾经的曾经...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">行行走走忙忙匆匆挤挤, 进进出出影影形形觅觅...</Button>
+        <Button variant="dashed" color="black">行行走走忙忙匆匆挤挤</Button>
+        <Button variant="dashed" color="black">进进出出影影形形觅觅...</Button>
         <Button variant="contained" color="primary">当暴雨不再影响我的心情</Button>
         <Button variant="contained" color="black">当离别不再令我感到伤感</Button>
         <Button variant="contained" color="info">当金钱不足以撼动我的梦想</Button>
@@ -53,7 +77,8 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="warning">仿佛今生, 恍若隔世...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">我不想再前往宫殿了, 我只愿停留在有你的客栈...</Button>
+        <Button variant="dashed" color="black">我不想再前往宫殿了</Button>
+        <Button variant="dashed" color="black">我只愿停留在有你的客栈...</Button>
         <Button variant="contained" color="primary">一滴泪</Button>
         <Button variant="contained" color="secondary">滴入河流</Button>
         <Button variant="contained" color="dark">汇入大海</Button>
@@ -76,9 +101,25 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">带走我的泪水...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">挫其志, 锻其心, 阻其行, 厉其言, 而屹立不倒...</Button>
-        <Button variant="contained" color="error">很喜欢很喜欢一个人, 却不能在一起, 是怎样的心情?</Button>
-        <Button variant="contained" color="warning">没有后悔, 没有遗憾, 只有对她止不住的思念...</Button>
+        <Button variant="dashed" color="dark">昨天走了, 把最低温度留给了今天...</Button>
+        <Button variant="contained" color="error">言语可以动人心</Button>
+        <Button variant="contained" color="secondary">专注可以勾人魂</Button>
+        <Button variant="contained" color="warning">执着可以摄人魄...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="black">我来过这个世界, 在梦中...</Button>
+        <Button variant="contained" color="primary">我很倔强</Button>
+        <Button variant="contained" color="black">有话, 不说</Button>
+        <Button variant="contained" color="secondary">有错, 不解释</Button>
+        <Button variant="contained" color="error">有烦恼, 写成诗...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="black">我愿化为一道光</Button>
+        <Button variant="dashed" color="black">穿越银河去旅行...</Button>
+        <Button variant="contained" color="secondary">很喜欢很喜欢一个人, 却不能在一起</Button>
+        <Button variant="contained" color="warning">是怎样的心情?</Button>
+        <Button variant="contained" color="black">没有后悔, 没有遗憾</Button>
+        <Button variant="contained" color="warning">只有对她止不住的思念...</Button>
       </DStack>
       <DStack>
         <Button variant="dashed" color="black">追求技术之颠, 探索宇宙之秘...</Button>
@@ -87,7 +128,8 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="info">谁愿意动一指传言...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">愿沉迷于工作而无法自拔, 愿追求于技术而永不止步...</Button>
+        <Button variant="dashed" color="black">愿沉迷于工作而无法自拔</Button>
+        <Button variant="dashed" color="black">愿追求于技术而永不止步...</Button>
         <Button variant="contained" color="error">一滴眼泪的溢出, 蕴含的是百分的思念</Button>
         <Button variant="contained" color="info">两个眼角的悲伤, 望穿的是一世的秋凉...</Button>
       </DStack>
@@ -96,13 +138,6 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="primary">心, 是一个人强大的基础</Button>
         <Button variant="contained" color="secondary">思想, 是人们超越平凡的阶梯</Button>
         <Button variant="contained" color="error">灵魂, 是人类探索宇宙的载体...</Button>
-      </DStack>
-      <DStack>
-        <Button variant="dashed" color="black">你是夏天的棉袄, 沸血, 煮心, 烧脑...</Button>
-        <Button variant="contained" color="warning">心中有你, 如影随形</Button>
-        <Button variant="contained" color="error">梦中有你, 朝夕相伴</Button>
-        <Button variant="contained" color="black">未来有你, 事倍功半</Button>
-        <Button variant="contained" color="dark">时间如你, 不能相见...</Button>
       </DStack>
     </DPaper>
   );

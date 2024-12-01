@@ -23,7 +23,7 @@ const DPaper = styled(Paper)({
   display: 'flex',
   justifyContent: 'space-between',
   zIndex: 50,
-  backgroundColor: Color.primary(1),
+  backgroundColor: Color.secondary(1),
 });
 
 const DBox = styled(Box)({
@@ -38,6 +38,7 @@ const EBox = styled(DBox)({
 });
 
 const DIconButton = styled(IconButton)({
+  fontSize: '2.4rem',
   marginTop: '1rem',
 });
 
