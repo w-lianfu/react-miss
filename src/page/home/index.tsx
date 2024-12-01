@@ -6,6 +6,7 @@ import { purple } from '@mui/material/colors';
 
 import Color from '@tool/color';
 import Size from '@tool/size';
+import AppPage from '@con/app-page';
 
 interface IProps {}
 interface IState {}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { Paper, Box, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
@@ -54,12 +55,16 @@ const AppMenu = (props: IProps, state: IState) => {
   return (
     <DPaper>
       <DBox>
-        <DIconButton color="primary">
-          <MdDashboard />
-        </DIconButton>
-        <DIconButton color="primary">
-          <MdHome />
-        </DIconButton>
+        <Link to="/">
+          <DIconButton color="primary">
+            <MdDashboard />
+          </DIconButton>
+        </Link>
+        <Link to="/home">
+          <DIconButton color="primary">
+            <MdHome />
+          </DIconButton>
+        </Link>
         <DIconButton color="primary">
           <MdPark />
         </DIconButton>

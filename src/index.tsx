@@ -2,7 +2,7 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import reportWebVitals from './reportWebVitals';
-import AppRoot from './container/app-root';
+import AppRoute from '@con/app-route';
 
 const root = createRoot(
   document.getElementById('root') as HTMLElement,
@@ -10,7 +10,7 @@ const root = createRoot(
 
 root.render(
   <StrictMode>
-    <AppRoot />
+    <AppRoute />
   </StrictMode>,
 );
 
