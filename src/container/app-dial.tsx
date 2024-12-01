@@ -25,7 +25,6 @@ const DStack = styled(Stack)({
 });
 
 const actions = [
-  { icon: <MdDashboard />, name: 'Dashboard' },
   { icon: <MdLock />, name: 'Lock' },
   { icon: <MdRefresh />, name: 'Refresh' },
   { icon: <MdArrowDownward />, name: 'Bottom' },

@@ -65,23 +65,21 @@ const AppMenu = (props: IProps, state: IState) => {
             <MdHome />
           </DIconButton>
         </Link>
-        <DIconButton color="primary">
-          <MdPark />
-        </DIconButton>
       </DBox>
       <EBox>
         <DIconButton color="primary" onClick={() => toggleLock(true)}>
           <MdLock />
         </DIconButton>
-        <DIconButton color="primary">
-          <MdToken />
-        </DIconButton>
-        <DIconButton color="primary">
-          <MdSecurity />
-        </DIconButton>
-        <DIconButton color="primary">
-          <MdSettings />
-        </DIconButton>
+        <Link to="/security">
+          <DIconButton color="primary">
+            <MdSecurity />
+          </DIconButton>
+        </Link>
+        <Link to="/setting">
+          <DIconButton color="primary">
+            <MdSettings />
+          </DIconButton>
+        </Link>
       </EBox>
     </DPaper>
   );
