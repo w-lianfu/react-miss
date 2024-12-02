@@ -11,11 +11,9 @@ interface IState {}
 
 const DPaper = styled(Paper)({
   display: 'flex',
-  position: 'fixed',
-  right: 0,
-  top: Size.topHeight,
-  bottom: Size.statusHeight,
+  position: 'relative',
   width: Size.rightWidth,
+  height: '100%',
   zIndex: 50,
   backgroundColor: Color.black(1),
 });

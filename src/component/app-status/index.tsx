@@ -11,9 +11,7 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  position: 'fixed',
-  bottom: 0,
-  left: 0,
+  position: 'relative',
   width: '100%',
   height: Size.statusHeight,
   display: 'flex',

@@ -11,6 +11,12 @@ import AppPage from '@con/app-page';
 interface IProps {}
 interface IState {}
 
+const DPaper = styled(Paper)({
+  width: '100%',
+  height: '100%',
+  position: 'relative',
+  overflowY: 'auto',
+});
 const DStack = styled(Stack)({
   display: 'flex',
   flexWrap: 'wrap',
@@ -22,7 +28,7 @@ const Home = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <>
+    <DPaper>
       <DStack>
         <Button variant="contained" color="secondary">愿为一条鱼, 探索海洋之秘</Button>
         <Button variant="contained" color="warning">愿为一只鹰, 遨游苍穹之空</Button>
@@ -58,7 +64,26 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="info">当金钱不足以撼动我的梦想</Button>
         <Button variant="contained" color="error">这才是我喜欢的自己...</Button>
       </DStack>
-    </>
+      <Typography variant="h6">~~~ New York City ~~~</Typography>
+      <Typography variant="h6">~~~ New York City ~~~</Typography>
+      <Typography variant="h6">~~~ New York City ~~~</Typography>
+      <Typography variant="h6">~~~ New York City ~~~</Typography>
+      <Typography variant="h6">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ New York City ~~~</Typography>
+      <Typography variant="h5">~~~ Mezcal Mezcal Mezcal ~~~</Typography>
+    </DPaper>
   );
 };
 

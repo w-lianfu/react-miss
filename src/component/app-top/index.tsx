@@ -12,9 +12,7 @@ interface IState {}
 
 const DBox = styled(Box)({
   display: 'flex',
-  position: 'fixed',
-  top: 0,
-  left: 0,
+  position: 'relative',
   width: '100%',
   height: Size.topHeight,
   alignItems: 'center',

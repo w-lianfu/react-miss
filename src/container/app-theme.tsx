@@ -1,6 +1,7 @@
 import React, { useEffect, ReactNode } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 
+import '@scss/index.scss';
 import Theme from '@theme/index';
 
 interface IProps {

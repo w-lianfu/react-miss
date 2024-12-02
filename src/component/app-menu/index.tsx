@@ -16,11 +16,10 @@ interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
-  position: 'fixed',
-  left: 0,
-  top: Size.topHeight,
-  bottom: Size.statusHeight,
+  position: 'relative',
+  // bottom: Size.statusHeight,
   width: Size.menuWidth,
+  height: '100%',
   display: 'flex',
   justifyContent: 'space-between',
   zIndex: 50,

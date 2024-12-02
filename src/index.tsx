@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import reportWebVitals from './reportWebVitals';
 import AppRoute from '@con/app-route';
+import AppPaper from '@con/app-paper';
 
 const root = createRoot(
   document.getElementById('root') as HTMLElement,
@@ -10,7 +11,7 @@ const root = createRoot(
 
 root.render(
   <StrictMode>
-    <AppRoute />
+    <AppPaper />
   </StrictMode>,
 );
 
