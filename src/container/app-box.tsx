@@ -15,7 +15,6 @@ const DPaper = styled(Paper)({
   position: 'relative',
   display: 'flex',
   width: '100%',
-  // marginTop: `${Size.appTop}rem`,
   marginBottom: `${Size.appStatus}rem`,
 });
 

@@ -8,6 +8,7 @@ import Color from '@tool/color';
 import Size from '@tool/size';
 import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
+import AppNav from '@comp/app-nav/index';
 import Dashboard from '@page/dashboard/index';
 import Home from '@page/home/index';
 import Love from '@page/love/index';
@@ -17,18 +18,10 @@ import Setting from '@page/setting/index';
 interface IProps {}
 interface IState {}
 
-const EPaper = styled(Paper)({
+const DPaper = styled(Paper)({
   position: 'relative',
-  width: '100%',
-  height: '100%',
   display: 'grid',
-  gridTemplateColumns: `${Size.appLeft}rem 1fr ${Size.appRight}rem`,
-});
-
-const FPaper = styled(Paper)({
-  position: 'relative',
-  width: '100%',
-  height: '100%',
+  gridTemplateRows: `${Size.appTop + Size.appNav}rem 1fr`,
 });
 
 const AppPage = (props: IProps, state: IState) => {
@@ -37,8 +30,8 @@ const AppPage = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <EPaper>
-      <AppLeft />
+    <DPaper>
+      <AppNav />
       <Routes>
         <Route index={true} element={<Dashboard />} />
         <Route path="/home" element={<Home />} />
@@ -47,8 +40,7 @@ const AppPage = (props: IProps, state: IState) => {
         <Route path="/setting" element={<Setting />} />
         <Route path="*" element={<Dashboard />} />
       </Routes>
-      <AppRight />
-    </EPaper>
+    </DPaper>
   );
 };
 

@@ -35,10 +35,7 @@ const AppPaper = (props: IProps, state: IState) => {
     <HashRouter>
       <AppTheme>
         <AppTop />
-        <DPaper>
-          <AppNav />
-          <AppPage />
-        </DPaper>
+        <AppPage />
         <AppStatus />
         <AppDial />
         {isLock ? <AppLock /> : null}
