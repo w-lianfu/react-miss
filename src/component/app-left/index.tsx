@@ -10,6 +10,7 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
+  position: 'relative',
   width: '100%',
   height: '100%',
   backgroundColor: Color.black(1),

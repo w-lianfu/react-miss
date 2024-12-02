@@ -22,7 +22,7 @@ const DPaper = styled(Paper)({
   height: '100%',
   position: 'relative',
   display: 'grid',
-  gridTemplateRows: '2rem 5rem 1fr 2rem',
+  gridTemplateRows: '2rem 5rem 1fr',
   overflow: 'hidden',
 });
 

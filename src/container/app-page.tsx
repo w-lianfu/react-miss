@@ -9,6 +9,7 @@ import { styled } from '@mui/material/styles';
 import Color from '@tool/color';
 import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
+import AppStatus from '@comp/app-status/index';
 import Dashboard from '@page/dashboard/index';
 import Home from '@page/home/index';
 import Love from '@page/love/index';
@@ -53,7 +54,6 @@ const AppPage = (props: IProps, state: IState) => {
           <Route path="*" element={<Dashboard />} />
         </Routes>
       </FPaper>
-      <AppRight />
     </EPaper>
   );
 };

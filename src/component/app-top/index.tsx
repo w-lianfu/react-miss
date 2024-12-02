@@ -19,7 +19,6 @@ const DBox = styled(Box)({
   justifyContent: 'center',
   lineHeight: 1,
   fontSize: '1.2rem',
-  zIndex: 50,
   color: Color.white(1),
   backgroundColor: Color.black(1),
 });

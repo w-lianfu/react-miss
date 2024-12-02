@@ -11,13 +11,15 @@ interface IProps {}
 interface IState {}
 
 const DBox = styled(Box)({
-  position: 'relative',
+  position: 'fixed',
+  left: 0,
+  bottom: 0,
   width: '100%',
-  height: '100%',
+  height: '2rem',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  zIndex: 50,
+  zIndex: 55,
   lineHeight: 1,
   fontSize: '1.2rem',
   color: Color.white(1),
