@@ -12,7 +12,7 @@ interface IState {}
 const DPaper = styled(Paper)({
   display: 'flex',
   position: 'relative',
-  width: Size.rightWidth,
+  width: '100%',
   height: '100%',
   zIndex: 50,
   backgroundColor: Color.black(1),

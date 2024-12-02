@@ -13,7 +13,7 @@ interface IState {}
 const DBox = styled(Box)({
   position: 'relative',
   width: '100%',
-  height: Size.statusHeight,
+  height: '100%',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -30,7 +30,7 @@ const AppStatus = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>我不想再前往宫殿了, 我只愿停留在有你的客栈...</DBox>
+    <DBox>我不想再前往宫殿了, 我只愿停留在有你的客栈</DBox>
   );
 };
 

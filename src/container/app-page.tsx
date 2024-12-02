@@ -7,7 +7,7 @@ import { Paper, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
-import AppMenu from '@comp/app-menu/index';
+import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
 import Dashboard from '@page/dashboard/index';
 import Home from '@page/home/index';
@@ -20,19 +20,18 @@ interface IProps {}
 interface IState {}
 
 const EPaper = styled(Paper)({
+  position: 'relative',
   width: '100%',
   height: '100%',
-  position: 'relative',
   display: 'grid',
-  gridTemplateColumns: '5rem 1fr 1rem',
+  gridTemplateColumns: '0.2rem 1fr 0.2rem',
   overflow: 'hidden',
 });
 
 const FPaper = styled(Paper)({
+  position: 'relative',
   width: '100%',
   height: '100%',
-  padding: '0 1rem',
-  position: 'relative',
   overflowY: 'auto',
 });
 
@@ -42,22 +41,20 @@ const AppPage = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <>
-      <EPaper>
-        <AppMenu />
-        <FPaper>
-          <Routes>
-            <Route index={true} element={<Dashboard />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/love" element={<Love />} />
-            <Route path="/security" element={<Security />} />
-            <Route path="/setting" element={<Setting />} />
-            <Route path="*" element={<Dashboard />} />
-          </Routes>
-        </FPaper>
-        <AppRight />
-      </EPaper>
-    </>
+    <EPaper>
+      <AppLeft />
+      <FPaper>
+        <Routes>
+          <Route index={true} element={<Dashboard />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/love" element={<Love />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="*" element={<Dashboard />} />
+        </Routes>
+      </FPaper>
+      <AppRight />
+    </EPaper>
   );
 };
 

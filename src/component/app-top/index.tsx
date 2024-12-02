@@ -14,7 +14,7 @@ const DBox = styled(Box)({
   display: 'flex',
   position: 'relative',
   width: '100%',
-  height: Size.topHeight,
+  height: '100%',
   alignItems: 'center',
   justifyContent: 'center',
   lineHeight: 1,
@@ -30,7 +30,7 @@ const AppTop = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>你是病, 渗入血液, 侵入骨髓, 扎进心底, 百年缠身...</DBox>
+    <DBox>你是病, 渗入血液, 侵入骨髓, 扎进心底, 百年缠身</DBox>
   );
 };
 
