@@ -15,7 +15,7 @@ const DBox = styled(Box)({
   left: 0,
   bottom: 0,
   width: '100%',
-  height: '2rem',
+  height: `${Size.appStatus}rem`,
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

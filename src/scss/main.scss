@@ -12,7 +12,7 @@ html {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -30,7 +30,6 @@ body {
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Noto Sans',
     'Droid Sans Mono', 'PingFang SC', system-ui, sans-serif;
   letter-spacing: 0.01rem;
-  overflow: hidden;
 }
 
 #root {
@@ -38,8 +37,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 #loading, #lock, #cover, #portal {

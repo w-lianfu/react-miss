@@ -18,7 +18,7 @@ interface IState {}
 const DPaper = styled(Paper)({
   position: 'relative',
   // bottom: Size.statusHeight,
-  width: Size.menuWidth,
+  // width: Size.menuWidth,
   height: '100%',
   display: 'flex',
   justifyContent: 'space-between',

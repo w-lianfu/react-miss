@@ -1,8 +1,9 @@
 const Size = {
-  topHeight: '2rem',
-  statusHeight: '2rem',
-  menuWidth: '5rem',
-  rightWidth: '0.2rem',
+  appTop: 2,
+  appNav: 5,
+  appStatus: 2,
+  appLeft: 0.2,
+  appRight: 0.2,
 };
 
 export default Size;

@@ -25,7 +25,7 @@ const DPaper = styled(Paper)({
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
-  margin: `${Size.topHeight} ${Size.rightWidth} ${Size.statusHeight} ${Size.menuWidth}`,
+  // margin: `${Size.topHeight} ${Size.rightWidth} ${Size.statusHeight} ${Size.menuWidth}`,
   padding: '1rem',
   overflowY: 'auto',
 });

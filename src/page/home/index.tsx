@@ -7,15 +7,16 @@ import { purple } from '@mui/material/colors';
 import Color from '@tool/color';
 import Size from '@tool/size';
 import AppPage from '@con/app-page';
+import AppBox from '@con/app-box';
 
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
   width: '100%',
-  height: '100%',
   position: 'relative',
-  overflowY: 'auto',
+  marginTop: '7rem',
+  marginBottom: '2rem',
 });
 const DStack = styled(Stack)({
   display: 'flex',
@@ -28,7 +29,7 @@ const Home = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DPaper>
+    <AppBox>
       <DStack>
         <Button variant="contained" color="secondary">愿为一条鱼, 探索海洋之秘</Button>
         <Button variant="contained" color="warning">愿为一只鹰, 遨游苍穹之空</Button>
@@ -83,7 +84,7 @@ const Home = (props: IProps, state: IState) => {
       <Typography variant="h5">~~~ New York City ~~~</Typography>
       <Typography variant="h5">~~~ New York City ~~~</Typography>
       <Typography variant="h5">~~~ Mezcal ~~~</Typography>
-    </DPaper>
+    </AppBox>
   );
 };
 

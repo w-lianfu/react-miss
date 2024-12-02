@@ -5,6 +5,7 @@ import { Paper, Stack, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import AppBox from '@con/app-box';
 
 interface IProps {}
 interface IState {}
@@ -20,7 +21,7 @@ const Security = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <>
+    <AppBox>
       <DStack>
         <Button variant="dashed" color="dark">昨天走了, 把最低温度留给了今天...</Button>
         <Button variant="contained" color="secondary">很喜欢很喜欢一个人, 却不能在一起</Button>
@@ -53,7 +54,7 @@ const Security = (props: IProps, state: IState) => {
         <Button variant="contained" color="info">昨日梦中与会</Button>
         <Button variant="contained" color="warning">仿佛今生, 恍若隔世...</Button>
       </DStack>
-    </>
+    </AppBox>
   );
 
 };

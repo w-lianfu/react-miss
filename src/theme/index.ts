@@ -165,7 +165,6 @@ const Theme = createTheme({
           backgroundColor: Color.white(1),
 
           '& .MuiBox-root': {
-            position: 'relative',
             display: 'flex',
             flexWrap: 'wrap',
           },

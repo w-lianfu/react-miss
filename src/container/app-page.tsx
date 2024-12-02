@@ -7,6 +7,7 @@ import { Paper, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import Size from '@tool/size';
 import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
 import AppStatus from '@comp/app-status/index';
@@ -25,15 +26,13 @@ const EPaper = styled(Paper)({
   width: '100%',
   height: '100%',
   display: 'grid',
-  gridTemplateColumns: '0.2rem 1fr 0.2rem',
-  overflow: 'hidden',
+  gridTemplateColumns: `${Size.appLeft}rem 1fr ${Size.appRight}rem`,
 });
 
 const FPaper = styled(Paper)({
   position: 'relative',
   width: '100%',
   height: '100%',
-  overflowY: 'auto',
 });
 
 const AppPage = (props: IProps, state: IState) => {
@@ -44,16 +43,15 @@ const AppPage = (props: IProps, state: IState) => {
   return (
     <EPaper>
       <AppLeft />
-      <FPaper>
-        <Routes>
-          <Route index={true} element={<Dashboard />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/love" element={<Love />} />
-          <Route path="/security" element={<Security />} />
-          <Route path="/setting" element={<Setting />} />
-          <Route path="*" element={<Dashboard />} />
-        </Routes>
-      </FPaper>
+      <Routes>
+        <Route index={true} element={<Dashboard />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/love" element={<Love />} />
+        <Route path="/security" element={<Security />} />
+        <Route path="/setting" element={<Setting />} />
+        <Route path="*" element={<Dashboard />} />
+      </Routes>
+      <AppRight />
     </EPaper>
   );
 };

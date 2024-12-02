@@ -5,6 +5,7 @@ import { Paper, Stack, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import AppBox from '@con/app-box';
 
 interface IProps {}
 interface IState {}
@@ -14,14 +15,11 @@ const DStack = styled(Stack)({});
 
 const Dashboard = (props: IProps, state: IState) => {
   useEffect(() => {
-    console.log('dashboard');
-    replace('/');
-
     return () => {};
   }, []);
 
   return (
-    <>
+    <AppBox>
       <DStack>
         <Button variant="dashed" color="black">诗为她而作, 泪为你而流...</Button>
         <Button variant="contained" color="primary">记忆的碎片经常侵入我的生活</Button>
@@ -42,7 +40,7 @@ const Dashboard = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">有错, 不解释</Button>
         <Button variant="contained" color="error">有烦恼, 写成诗...</Button>
       </DStack>
-    </>
+    </AppBox>
   );
 };
 

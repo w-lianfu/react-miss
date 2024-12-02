@@ -18,12 +18,10 @@ interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
-  width: '100%',
-  height: '100%',
   position: 'relative',
   display: 'grid',
-  gridTemplateRows: '2rem 5rem 1fr',
-  overflow: 'hidden',
+  gridTemplateRows: '1fr',
+  width: '100%',
 });
 
 const AppPaper = (props: IProps, state: IState) => {

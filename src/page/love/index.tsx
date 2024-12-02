@@ -5,6 +5,7 @@ import { Paper, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import AppBox from '@con/app-box';
 
 interface IProps {}
 interface IState {}
@@ -19,10 +20,10 @@ const Love = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DPaper>
+    <AppBox>
       <Button variant="dashed" color="black">为你写诗</Button>
       <Button variant="contained" color="secondary">诗为她而作, 泪为你而流...</Button>
-    </DPaper>
+    </AppBox>
   );
 
 };

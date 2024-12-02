@@ -3,20 +3,25 @@ import { Link } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { MdHome, MdFavorite, MdSecurity } from 'react-icons/md';
+import {
+  MdHome, MdFavorite, MdSecurity, MdSettings,
+} from 'react-icons/md';
 
 import Color from '@tool/color';
+import Size from '@tool/size';
 
 interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
-  position: 'relative',
+  position: 'fixed',
   display: 'flex',
-  height: '100%',
+  height: `${Size.appNav}rem`,
+  top: `${Size.appTop}rem`,
   width: '100%',
   alignItems: 'center',
   justifyContent: 'center',
+  zIndex: 50,
   borderTop: `0.1rem solid ${Color.white(1)}`,
   backgroundColor: Color.black(1),
 });
@@ -41,6 +46,9 @@ const AppNav = (props: IProps, state: IState) => {
         </Link>
         <Link to="/security">
           <DIconButton color="primary"><MdSecurity /></DIconButton>
+        </Link>
+        <Link to="/setting">
+          <DIconButton color="primary"><MdSettings /></DIconButton>
         </Link>
       </DBox>
     </DPaper>
