@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Paper, Box, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
@@ -48,21 +48,33 @@ const EIconButton = styled(IconButton)({
 });
 
 const AppMenu = (props: IProps, state: IState) => {
+  const location = useLocation();
+  const [pathname, setPathname] = useState('');
+
   useEffect(() => {
+    console.log('location.pathname -- ', location.pathname);
+    setPathname(location.pathname);
+
     return () => {};
-  }, []);
+  }, [pathname]);
 
   return (
     <DPaper>
       <DBox>
         <Link to="/">
-          <DIconButton color="primary"><MdDashboard /></DIconButton>
+          <DIconButton color={pathname === '/' ? 'secondary' : 'primary'}>
+            <MdDashboard />
+          </DIconButton>
         </Link>
         <Link to="/home">
-          <DIconButton color="primary"><MdHome /></DIconButton>
+          <DIconButton color={pathname === '/home' ? 'secondary' : 'primary'}>
+            <MdHome />
+          </DIconButton>
         </Link>
         <Link to="/love">
-          <DIconButton color="primary"><MdFavorite /></DIconButton>
+          <DIconButton color={pathname === '/love' ? 'secondary' : 'primary'}>
+            <MdFavorite />
+          </DIconButton>
         </Link>
       </DBox>
       <EBox>
@@ -70,10 +82,14 @@ const AppMenu = (props: IProps, state: IState) => {
           <MdLock />
         </DIconButton>
         <Link to="/security">
-          <DIconButton color="primary"><MdSecurity /></DIconButton>
+          <DIconButton color={pathname === '/security' ? 'secondary' : 'primary'}>
+            <MdSecurity />
+          </DIconButton>
         </Link>
         <Link to="/setting">
-          <DIconButton color="primary"><MdSettings /></DIconButton>
+          <DIconButton color={pathname === '/setting' ? 'secondary' : 'primary'}>
+            <MdSettings />
+          </DIconButton>
         </Link>
       </EBox>
     </DPaper>
