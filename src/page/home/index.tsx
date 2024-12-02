@@ -65,25 +65,6 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="info">当金钱不足以撼动我的梦想</Button>
         <Button variant="contained" color="error">这才是我喜欢的自己...</Button>
       </DStack>
-      <Typography variant="h6">~~~ New York City ~~~</Typography>
-      <Typography variant="h6">~~~ New York City ~~~</Typography>
-      <Typography variant="h6">~~~ New York City ~~~</Typography>
-      <Typography variant="h6">~~~ New York City ~~~</Typography>
-      <Typography variant="h6">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ Mezcal ~~~</Typography>
     </AppBox>
   );
 };

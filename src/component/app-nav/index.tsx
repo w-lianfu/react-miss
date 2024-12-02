@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -20,6 +20,7 @@ const DPaper = styled(Paper)({
   display: 'grid',
   alignItems: 'end',
 });
+
 const DBox = styled(Box)({
   position: 'relative',
   display: 'flex',
@@ -29,29 +30,50 @@ const DBox = styled(Box)({
   justifyContent: 'center',
   backgroundColor: Color.black(1),
 });
+
 const DIconButton = styled(IconButton)({
   margin: '0 0.6rem',
 });
 
 const AppNav = (props: IProps, state: IState) => {
+  const navi = useLocation();
+
   useEffect(() => {
+    console.log('pathname -- ', navi.pathname);
+
     return () => {};
-  }, []);
+  }, [navi.pathname]);
 
   return (
     <DPaper>
       <DBox>
         <Link to="/home">
-          <DIconButton color="primary"><MdHome /></DIconButton>
+          <DIconButton>
+            <MdHome color={
+              navi.pathname === '/home' ? Color.black(1) : Color.primary(1)
+            } />
+          </DIconButton>
         </Link>
         <Link to="/love">
-          <DIconButton color="primary"><MdFavorite /></DIconButton>
+          <DIconButton>
+            <MdFavorite color={
+              navi.pathname === '/love' ? Color.black(1) : Color.primary(1)
+            } />
+          </DIconButton>
         </Link>
         <Link to="/security">
-          <DIconButton color="primary"><MdSecurity /></DIconButton>
+          <DIconButton>
+            <MdSecurity color={
+              navi.pathname === '/security' ? Color.black(1) : Color.primary(1)
+            } />
+          </DIconButton>
         </Link>
         <Link to="/setting">
-          <DIconButton color="primary"><MdSettings /></DIconButton>
+          <DIconButton>
+            <MdSettings color={
+              navi.pathname === '/setting' ? Color.black(1) : Color.primary(1)
+            } />
+          </DIconButton>
         </Link>
       </DBox>
     </DPaper>
