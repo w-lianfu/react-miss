@@ -82,7 +82,7 @@ const Home = (props: IProps, state: IState) => {
       <Typography variant="h5">~~~ New York City ~~~</Typography>
       <Typography variant="h5">~~~ New York City ~~~</Typography>
       <Typography variant="h5">~~~ New York City ~~~</Typography>
-      <Typography variant="h5">~~~ Mezcal Mezcal Mezcal ~~~</Typography>
+      <Typography variant="h5">~~~ Mezcal ~~~</Typography>
     </DPaper>
   );
 };
