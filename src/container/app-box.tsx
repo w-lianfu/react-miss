@@ -13,6 +13,7 @@ interface IState {}
 
 const DPaper = styled(Paper)({
   position: 'relative',
+  display: 'flex',
   width: '100%',
   marginTop: `${Size.appTop + Size.appNav}rem`,
   marginBottom: `${Size.appStatus}rem`,

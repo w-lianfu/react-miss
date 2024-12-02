@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  Routes, Route, useLocation,
-} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -10,13 +8,11 @@ import Color from '@tool/color';
 import Size from '@tool/size';
 import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
-import AppStatus from '@comp/app-status/index';
 import Dashboard from '@page/dashboard/index';
 import Home from '@page/home/index';
 import Love from '@page/love/index';
 import Security from '@page/security/index';
 import Setting from '@page/setting/index';
-import lock from './store/app-lock';
 
 interface IProps {}
 interface IState {}
