@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { HashRouter } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
+import { Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Color from '@tool/color';
+import Size from '@tool/size';
 import AppTheme from './app-theme';
 import AppPage from './app-page';
 import AppLock from './app-lock';
@@ -16,6 +18,12 @@ import lock from './store/app-lock';
 interface IProps {}
 interface IState {}
 
+const DPaper = styled(Paper)({
+  position: 'relative',
+  display: 'grid',
+  gridTemplateRows: `${Size.appTop + Size.appNav}rem 1fr`,
+});
+
 const AppPaper = (props: IProps, state: IState) => {
   const { isLock } = lock;
 
@@ -27,8 +35,10 @@ const AppPaper = (props: IProps, state: IState) => {
     <HashRouter>
       <AppTheme>
         <AppTop />
-        <AppNav />
-        <AppPage />
+        <DPaper>
+          <AppNav />
+          <AppPage />
+        </DPaper>
         <AppStatus />
         <AppDial />
         {isLock ? <AppLock /> : null}

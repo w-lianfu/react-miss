@@ -14,18 +14,21 @@ interface IProps {}
 interface IState {}
 
 const DPaper = styled(Paper)({
-  position: 'fixed',
-  display: 'flex',
-  height: `${Size.appNav}rem`,
-  top: `${Size.appTop}rem`,
+  position: 'relative',
   width: '100%',
+  height: '100%',
+  display: 'grid',
+  alignItems: 'end',
+});
+const DBox = styled(Box)({
+  position: 'relative',
+  display: 'flex',
+  width: '100%',
+  height: `${Size.appNav}rem`,
   alignItems: 'center',
   justifyContent: 'center',
-  zIndex: 50,
-  borderTop: `0.1rem solid ${Color.white(1)}`,
   backgroundColor: Color.black(1),
 });
-const DBox = styled(Box)({});
 const DIconButton = styled(IconButton)({
   margin: '0 0.6rem',
 });
