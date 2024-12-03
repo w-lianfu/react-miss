@@ -30,7 +30,7 @@ const AppTop = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>你是病, 渗入血液, 侵入骨髓, 扎进心底, 百年缠身</DBox>
+    <DBox>每天醒来为了什么? 伐木造船, 驶向有你的彼岸...</DBox>
   );
 };
 

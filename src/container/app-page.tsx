@@ -36,7 +36,6 @@ const AppPage = (props: IProps, state: IState) => {
         <Route path="/home" element={<Home />} />
         <Route path="/love" element={<Love />} />
         <Route path="/security" element={<Security />} />
-        <Route path="/setting" element={<Setting />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </DPaper>

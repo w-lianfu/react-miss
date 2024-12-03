@@ -31,39 +31,35 @@ const Home = (props: IProps, state: IState) => {
   return (
     <AppBox>
       <DStack>
-        <Button variant="contained" color="secondary">愿为一条鱼, 探索海洋之秘</Button>
-        <Button variant="contained" color="warning">愿为一只鹰, 遨游苍穹之空</Button>
-        <Button variant="contained" color="dark">愿为一道门, 穿越宇宙之边</Button>
-        <Button variant="contained" color="error">愿为时光机, 开启时空之门...</Button>
-      </DStack>
-      <DStack>
-        <Button variant="dashed" color="black">追求技术之颠, 探索宇宙之秘...</Button>
-        <Button variant="contained" color="error">谁愿意抬一脚向前</Button>
-        <Button variant="contained" color="secondary">谁愿意转一眼相见</Button>
-        <Button variant="contained" color="info">谁愿意动一指传言...</Button>
-      </DStack>
-      <DStack>
-        <Button variant="dashed" color="black">每天醒来为了什么</Button>
-        <Button variant="dashed" color="black">伐木造船, 驶向有你的彼岸...</Button>
-        <Button variant="contained" color="primary">挫其志</Button>
-        <Button variant="contained" color="black">锻其心</Button>
-        <Button variant="contained" color="secondary">阻其行</Button>
-        <Button variant="contained" color="dark">厉其言</Button>
-        <Button variant="contained" color="warning">而屹立不倒...</Button>
+        <Button variant="dashed" color="black">一滴眼泪的溢出, 蕴含的是百分的思念</Button>
+        <Button variant="dashed" color="black">两个眼角的悲伤, 望穿的是一世的秋凉...</Button>
+        <Button variant="contained" color="primary">一滴泪</Button>
+        <Button variant="contained" color="black">滴入河流</Button>
+        <Button variant="contained" color="secondary">汇入大海</Button>
+        <Button variant="contained" color="warning">凝入云朵</Button>
+        <Button variant="contained" color="black">化为雨滴</Button>
+        <Button variant="contained" color="error">落在你的脸颊...</Button>
       </DStack>
       <DStack>
         <Button variant="dashed" color="black">拿起若有意, 放下又何须用心...</Button>
-        <Button variant="contained" color="primary">心, 是一个人强大的基础</Button>
-        <Button variant="contained" color="secondary">思想, 是人们超越平凡的阶梯</Button>
-        <Button variant="contained" color="error">灵魂, 是人类探索宇宙的载体...</Button>
+        <Button variant="contained" color="error">谁愿意抬一脚向前</Button>
+        <Button variant="contained" color="black">谁愿意转一眼相见</Button>
+        <Button variant="contained" color="secondary">谁愿意动一指传言...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">我愿化为一道光</Button>
-        <Button variant="dashed" color="black">穿越银河去旅行...</Button>
-        <Button variant="contained" color="primary">当暴雨不再影响我的心情</Button>
-        <Button variant="contained" color="black">当离别不再令我感到伤感</Button>
-        <Button variant="contained" color="info">当金钱不足以撼动我的梦想</Button>
-        <Button variant="contained" color="error">这才是我喜欢的自己...</Button>
+        <Button variant="dashed" color="black">你来过, 一缕烟, 过心间, 具思念, 忆千年...</Button>
+        <Button variant="contained" color="primary">你是病</Button>
+        <Button variant="contained" color="black">渗入血液</Button>
+        <Button variant="contained" color="secondary">侵入骨髓</Button>
+        <Button variant="contained" color="dark">扎进心底</Button>
+        <Button variant="contained" color="warning">百年缠身...</Button>
+      </DStack>
+      <DStack>
+        <Button variant="dashed" color="black">我愿化为一道光, 穿越银河去旅行...</Button>
+        <Button variant="contained" color="primary">愿此缘分至于今生</Button>
+        <Button variant="contained" color="black">不要刻入骨髓</Button>
+        <Button variant="contained" color="secondary">不要侵入写入灵魂</Button>
+        <Button variant="contained" color="error">不要纠缠来世...</Button>
       </DStack>
     </AppBox>
   );

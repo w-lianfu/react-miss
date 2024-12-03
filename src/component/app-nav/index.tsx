@@ -45,8 +45,6 @@ const AppNav = (props: IProps, state: IState) => {
       setPathname('love');
     } else if (navi.pathname === '/security') {
       setPathname('security');
-    } else if (navi.pathname === '/setting') {
-      setPathname('setting');
     } else {
       setPathname('home');
     }
@@ -75,13 +73,6 @@ const AppNav = (props: IProps, state: IState) => {
           <DIconButton>
             <MdSecurity color={
               pathname === 'security' ? Color.black(1) : Color.primary(1)
-            } />
-          </DIconButton>
-        </Link>
-        <Link to="/setting">
-          <DIconButton>
-            <MdSettings color={
-              pathname === 'setting' ? Color.black(1) : Color.primary(1)
             } />
           </DIconButton>
         </Link>
