@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button, IconButton } from '@mui/material';
@@ -37,9 +37,19 @@ const DIconButton = styled(IconButton)({
 
 const AppNav = (props: IProps, state: IState) => {
   const navi = useLocation();
+  const [pathname, setPathname] = useState('');
 
   useEffect(() => {
     console.log('pathname -- ', navi.pathname);
+    if (navi.pathname === '/love') {
+      setPathname('love');
+    } else if (navi.pathname === '/security') {
+      setPathname('security');
+    } else if (navi.pathname === '/setting') {
+      setPathname('setting');
+    } else {
+      setPathname('home');
+    }
 
     return () => {};
   }, [navi.pathname]);
@@ -50,28 +60,28 @@ const AppNav = (props: IProps, state: IState) => {
         <Link to="/home">
           <DIconButton>
             <MdHome color={
-              navi.pathname === '/home' ? Color.black(1) : Color.primary(1)
+              pathname === 'home' ? Color.black(1) : Color.primary(1)
             } />
           </DIconButton>
         </Link>
         <Link to="/love">
           <DIconButton>
             <MdFavorite color={
-              navi.pathname === '/love' ? Color.black(1) : Color.primary(1)
+              pathname === 'love' ? Color.black(1) : Color.primary(1)
             } />
           </DIconButton>
         </Link>
         <Link to="/security">
           <DIconButton>
             <MdSecurity color={
-              navi.pathname === '/security' ? Color.black(1) : Color.primary(1)
+              pathname === 'security' ? Color.black(1) : Color.primary(1)
             } />
           </DIconButton>
         </Link>
         <Link to="/setting">
           <DIconButton>
             <MdSettings color={
-              navi.pathname === '/setting' ? Color.black(1) : Color.primary(1)
+              pathname === 'setting' ? Color.black(1) : Color.primary(1)
             } />
           </DIconButton>
         </Link>

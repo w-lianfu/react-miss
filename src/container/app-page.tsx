@@ -9,7 +9,6 @@ import Size from '@tool/size';
 import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
 import AppNav from '@comp/app-nav/index';
-import Dashboard from '@page/dashboard/index';
 import Home from '@page/home/index';
 import Love from '@page/love/index';
 import Security from '@page/security/index';
@@ -33,12 +32,12 @@ const AppPage = (props: IProps, state: IState) => {
     <DPaper>
       <AppNav />
       <Routes>
-        <Route index={true} element={<Dashboard />} />
+        <Route index={true} element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/love" element={<Love />} />
         <Route path="/security" element={<Security />} />
         <Route path="/setting" element={<Setting />} />
-        <Route path="*" element={<Dashboard />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </DPaper>
   );
