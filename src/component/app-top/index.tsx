@@ -30,7 +30,7 @@ const AppTop = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>每天醒来为了什么? 伐木造船, 驶向有你的彼岸...</DBox>
+    <DBox>诗为她而作, 泪为你而流...</DBox>
   );
 };
 

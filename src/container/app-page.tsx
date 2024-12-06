@@ -10,9 +10,6 @@ import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
 import AppNav from '@comp/app-nav/index';
 import Home from '@page/home/index';
-import Love from '@page/love/index';
-import Security from '@page/security/index';
-import Setting from '@page/setting/index';
 
 interface IProps {}
 interface IState {}
@@ -20,7 +17,7 @@ interface IState {}
 const DPaper = styled(Paper)({
   position: 'relative',
   display: 'grid',
-  gridTemplateRows: `${Size.appTop + Size.appNav}rem 1fr`,
+  gridTemplateRows: `${Size.appTop}rem 1fr`,
 });
 
 const AppPage = (props: IProps, state: IState) => {
@@ -29,16 +26,11 @@ const AppPage = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DPaper>
-      <AppNav />
-      <Routes>
-        <Route index={true} element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/love" element={<Love />} />
-        <Route path="/security" element={<Security />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </DPaper>
+    <Routes>
+      <Route index={true} element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
   );
 };
 

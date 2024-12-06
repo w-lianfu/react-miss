@@ -20,7 +20,7 @@ interface IState {}
 const DStack = styled(Stack)({
   position: 'fixed',
   bottom: `${Size.appStatus}rem`,
-  right: '1rem',
+  right: 0,
   display: 'flex',
 });
 

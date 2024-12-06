@@ -15,7 +15,9 @@ const DPaper = styled(Paper)({
   position: 'relative',
   display: 'flex',
   width: '100%',
+  marginTop: `${Size.appTop}rem`,
   marginBottom: `${Size.appStatus}rem`,
+  padding: '1rem 0',
 });
 
 const AppBox = (props: IProps, state: IState) => {
