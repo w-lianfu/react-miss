@@ -82,12 +82,6 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="black">谁愿意转一眼相见</Button>
         <Button variant="contained" color="secondary">谁愿意动一指传言...</Button>
       </DStack>
-      <DStack>
-        <Typography variant="body1">可琪，我是上天派来爱你的呀，我也是没有办法，我也没有想到我的心里满满的全是你，每天早上醒来第一件事就是想你，晚上辗转反侧睡不着觉还是想你，一天有24小时，一小时有60分钟，一分钟有60秒，我每时每分每秒都在想你。</Typography>
-        <Typography variant="body1">可琪，以后我不会再打扰你了，祝你幸福，我还是会想你，我还是会爱你，但已经与你无关，因为连我自己都无法阻止自己不去想你，不去爱你。推荐你看一部电视剧吧，我超级超级喜欢的《第一次亲密接触》，【温情提示】是佟大伪主演的电视剧哦。</Typography>
-        <Typography variant="body1">自从遇到了你，走在大街上，总是忍不住想要寻找你的身影；见到的每一辆BMW mini我都会想车里面的人会不会是你；以后的每一个圣诞节我都会想到你想要给我的惊喜！</Typography>
-        <Typography variant="body1">放心吧，我没事，我还是会继续我的梦想的，万一你在梦想的彼岸在等着我呢，我可不想再错过你了。所以呢：每天早上醒来为了什么？伐木造船，驶向有你的彼岸...</Typography>
-      </DStack>
     </AppBox>
   );
 };
