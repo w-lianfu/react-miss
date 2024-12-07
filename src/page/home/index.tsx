@@ -12,6 +12,11 @@ import Tool from '@tool/index';
 import Size from '@tool/size';
 import AppPage from '@con/app-page';
 import AppBox from '@con/app-box';
+import Img01 from '@static/image/keqi01.jpg';
+import Img02 from '@static/image/keqi02.jpg';
+import Img03 from '@static/image/keqi03.jpg';
+import Img04 from '@static/image/keqi04.jpg';
+import Img05 from '@static/image/keqi05.jpg';
 
 interface IProps {}
 interface IState {}
@@ -87,8 +92,7 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">伐木造船, 驶向有你的彼岸...</Button>
       </CStack>
       <DStack>
-        <img src={ `${Tool.host}keqi01.jpg` } ref={img1Ref}
-          onClick={() => viewImg('keqi01')}
+        <img src={Img01} ref={img1Ref} onClick={() => viewImg('keqi01')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
@@ -100,8 +104,7 @@ const Home = (props: IProps, state: IState) => {
         </Button>
       </DStack>
       <DStack>
-        <img src={ `${Tool.host}keqi02.jpg` } ref={img2Ref}
-          onClick={() => viewImg('keqi02')}
+        <img src={Img02} ref={img2Ref} onClick={() => viewImg('keqi02')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
@@ -113,8 +116,7 @@ const Home = (props: IProps, state: IState) => {
         <LoveButton variant="contained" color="secondary">落在你的脸颊...</LoveButton>
       </DStack>
       <DStack>
-        <img src={ `${Tool.host}keqi03.jpg` } ref={img3Ref}
-          onClick={() => viewImg('keqi03')}
+        <img src={Img03} ref={img3Ref} onClick={() => viewImg('keqi03')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
@@ -124,8 +126,7 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">我每时每分每秒都在想你...</Button>
       </DStack>
       <DStack>
-        <img src={ `${Tool.host}keqi04.jpg` } ref={img4Ref}
-          onClick={() => viewImg('keqi04')}
+        <img src={Img04} ref={img4Ref} onClick={() => viewImg('keqi04')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
@@ -135,8 +136,7 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">只有对她止不住的思念...</Button>
       </DStack>
       <DStack>
-        <img src={ `${Tool.host}keqi06.JPG` } ref={img5Ref}
-          onClick={() => viewImg('keqi06')}
+        <img src={Img05} ref={img5Ref} onClick={() => viewImg('keqi06')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
