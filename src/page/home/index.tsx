@@ -86,32 +86,6 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="black">谁愿意转一眼相见</Button>
         <Button variant="contained" color="secondary">谁愿意动一指传言...</Button>
       </DStack>
-      <DStack>
-        <Typography variant="body1">
-          我们看看开发各个组件所需的技能树需求。由于本文仅讨论ETH以及ETH兼容链的DApp开发，所以，以下技能树仅适用于ETH系：
-        </Typography>
-        <Typography variant="body1">合约开发：使用Solidity语言；</Typography>
-        <Typography variant="body1">
-          合约部署工具：可以选择Hardhat、Truffle或Foundry，建议使用Hardhat；
-        </Typography>
-        <Typography variant="body1">数据聚合服务：选择The Graph提供的托管服务；</Typography>
-        <Typography variant="body1">
-          数据聚合开发：The Graph给出的模板代码是TypeScript，因此这里使用TypeScript；
-        </Typography>
-        <Typography variant="body1">
-          前端页面：HTML+JavaScript/TypeScript，也可配合任意前端框架如Vue、React等；
-        </Typography>
-        <Typography variant="body1">
-          合约交互框架：虽然理论上使用JSON RPC就可以读写合约，但使用Ethers.js可以大大简化开发；
-        </Typography>
-        <Typography variant="body1">
-          钱包支持：如果仅支持MetaMask，则使用Ethers.js已足够，如果要支持多种钱包，尤其是需要连接手机钱包，则需要使用Web3Modal。
-        </Typography>
-        <Typography variant="h1">Hello</Typography>
-        <Typography variant="h1">Hello</Typography>
-        <Typography variant="h1">Hello</Typography>
-        <Typography variant="h1">Hello</Typography>
-      </DStack>
     </AppBox>
   );
 };
