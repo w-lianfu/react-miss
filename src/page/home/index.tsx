@@ -63,11 +63,10 @@ const Home = (props: IProps, state: IState) => {
       <DStack>
         <Button variant="contained" color="black">很喜欢很喜欢一个人, 却不能在一起</Button>
         <Button variant="contained" color="warning">是怎样的心情?</Button>
-        <Button variant="contained" color="secondary">没有后悔, 没有遗憾</Button>
-        <Button variant="contained" color="error">只有对她止不住的思念...</Button>
+        <Button variant="contained" color="error">没有后悔, 没有遗憾</Button>
+        <Button variant="contained" color="secondary">只有对她止不住的思念...</Button>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">香烟遇到了火柴, 点亮了自己...</Button>
         <Button variant="contained" color="error">思, 非一时之所梦</Button>
         <Button variant="contained" color="secondary">梦, 非一时之所思</Button>
         <Button variant="contained" color="black">长梦而烧脑, 至思而灼心</Button>
@@ -91,8 +90,6 @@ const Home = (props: IProps, state: IState) => {
         <LoveButton variant="contained" color="secondary">百年缠身...</LoveButton>
       </DStack>
       <DStack>
-        <LoveButton variant="dashed" color="black">行行走走忙忙匆匆挤挤</LoveButton>
-        <LoveButton variant="dashed" color="black">进进出出影影形形觅觅...</LoveButton>
         <LoveButton variant="contained" color="black">你来过</LoveButton>
         <LoveButton variant="contained" color="error">一缕烟</LoveButton>
         <LoveButton variant="contained" color="secondary">过心间</LoveButton>
@@ -100,13 +97,15 @@ const Home = (props: IProps, state: IState) => {
         <LoveButton variant="contained" color="secondary">忆千年...</LoveButton>
       </DStack>
       <DStack>
+        <Button variant="dashed" color="black">昨天走了, 把最低温度留给了今天...</Button>
         <LoveButton variant="contained" color="black">记忆的碎片经常</LoveButton>
         <LoveButton variant="contained" color="warning">侵入我的生活</LoveButton>
         <LoveButton variant="contained" color="secondary">闯入我的梦中</LoveButton>
         <LoveButton variant="contained" color="error">带走我的泪水...</LoveButton>
       </DStack>
       <DStack>
-        <Button variant="dashed" color="black">昨天走了, 把最低温度留给了今天...</Button>
+        <LoveButton variant="dashed" color="black">行行走走忙忙匆匆挤挤</LoveButton>
+        <LoveButton variant="dashed" color="black">进进出出影影形形觅觅...</LoveButton>
         <Button variant="contained" color="error">谁愿意抬一脚向前</Button>
         <Button variant="contained" color="black">谁愿意转一眼相见</Button>
         <Button variant="contained" color="secondary">谁愿意动一指传言...</Button>
@@ -121,22 +120,18 @@ const Home = (props: IProps, state: IState) => {
         </Button>
       </DStack>
       <DStack>
-        <Button variant="contained" color="warning">追求技术之巅, 探索宇宙之秘</Button>
-        <Button variant="contained" color="black">将技术之巅刻入骨髓</Button>
-        <Button variant="contained" color="secondary">将宇宙之秘写入灵魂...</Button>
-      </DStack>
-      <DStack>
         <LoveButton variant="contained" color="black">我很倔强</LoveButton>
         <LoveButton variant="contained" color="warning">有话, 不说</LoveButton>
         <LoveButton variant="contained" color="secondary">有错, 不解释</LoveButton>
         <LoveButton variant="contained" color="error">有烦恼, 写成诗...</LoveButton>
       </DStack>
       <DStack>
+        <Button variant="contained" color="black">
+          追求技术之巅, 探索宇宙之秘...
+        </Button>
         <Button variant="contained" color="secondary">
           志, 当立于青天白云之上, 方可不沾染尘埃...
         </Button>
-      </DStack>
-      <DStack>
         <Button variant="contained" color="black">
           我愿化为一道光, 穿越银河去旅行...
         </Button>
