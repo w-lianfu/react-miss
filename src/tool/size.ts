@@ -4,6 +4,7 @@ const Size = {
   appStatus: 2,
   appLeft: 0.2,
   appRight: 0.2,
+  imgWidth: 30,
 };
 
 export default Size;

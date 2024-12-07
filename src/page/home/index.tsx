@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable indent */
+import React, { useEffect, useState, useRef } from 'react';
 import { observer } from 'mobx-react-lite';
 import { Paper, Box, Button, Typography, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
+import Viewer from 'viewerjs';
 
+import 'viewerjs/dist/viewer.css';
 import Color from '@tool/color';
+import Tool from '@tool/index';
 import Size from '@tool/size';
 import AppPage from '@con/app-page';
 import AppBox from '@con/app-box';
@@ -28,9 +32,53 @@ const LoveButton = styled(Button)({
 });
 
 const Home = (props: IProps, state: IState) => {
+  const img1Ref = useRef(null);
+  const img2Ref = useRef(null);
+  const img3Ref = useRef(null);
+  const img4Ref = useRef(null);
+  const img5Ref = useRef(null);
+
   useEffect(() => {
     return () => {};
   }, []);
+
+  const viewImg = (imgName: string) => {
+    let currentRef = null;
+    switch (imgName) {
+      case 'keqi01':
+        currentRef = img1Ref.current;
+        break;
+      case 'keqi02':
+        currentRef = img2Ref.current;
+        break;
+      case 'keqi03':
+        currentRef = img3Ref.current;
+        break;
+      case 'keqi04':
+        currentRef = img4Ref.current;
+        break;
+      case 'keqi06':
+        currentRef = img5Ref.current;
+        break;
+      default:
+        currentRef = null;
+    }
+    if (currentRef) {
+      new Viewer(currentRef, {
+        navbar: false,
+        title: false,
+        toolbar: false,
+        movable: false,
+        rotatable: false,
+        scalable: false,
+        zoomable: false,
+        zoomOnTouch: false,
+        zoomOnWheel: false,
+        slideOnTouch: false,
+        tooltip: false,
+      });
+    }
+  };
 
   return (
     <AppBox>
@@ -39,12 +87,22 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">伐木造船, 驶向有你的彼岸...</Button>
       </CStack>
       <DStack>
+        <img src={ `${Tool.host}keqi01.jpg` } ref={img1Ref}
+          onClick={() => viewImg('keqi01')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
+      </DStack>
+      <DStack>
         <Button variant="contained" color="error">
           一滴眼泪的溢出, 蕴含的是百分的思念
         </Button>
         <Button variant="contained" color="secondary">
           两个眼角的悲伤, 望穿的是一世的秋凉...
         </Button>
+      </DStack>
+      <DStack>
+        <img src={ `${Tool.host}keqi02.jpg` } ref={img2Ref}
+          onClick={() => viewImg('keqi02')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
         <LoveButton variant="contained" color="black">一滴泪</LoveButton>
@@ -55,16 +113,31 @@ const Home = (props: IProps, state: IState) => {
         <LoveButton variant="contained" color="secondary">落在你的脸颊...</LoveButton>
       </DStack>
       <DStack>
+        <img src={ `${Tool.host}keqi03.jpg` } ref={img3Ref}
+          onClick={() => viewImg('keqi03')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
+      </DStack>
+      <DStack>
         <Button variant="contained" color="black">一天有24小时</Button>
         <Button variant="contained" color="error">一小时有60分钟</Button>
         <Button variant="contained" color="primary">一分钟有60秒</Button>
         <Button variant="contained" color="secondary">我每时每分每秒都在想你...</Button>
       </DStack>
       <DStack>
+        <img src={ `${Tool.host}keqi04.jpg` } ref={img4Ref}
+          onClick={() => viewImg('keqi04')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
+      </DStack>
+      <DStack>
         <Button variant="contained" color="black">很喜欢很喜欢一个人, 却不能在一起</Button>
         <Button variant="contained" color="warning">是怎样的心情?</Button>
         <Button variant="contained" color="error">没有后悔, 没有遗憾</Button>
         <Button variant="contained" color="secondary">只有对她止不住的思念...</Button>
+      </DStack>
+      <DStack>
+        <img src={ `${Tool.host}keqi06.JPG` } ref={img5Ref}
+          onClick={() => viewImg('keqi06')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
         <Button variant="contained" color="error">思, 非一时之所梦</Button>
