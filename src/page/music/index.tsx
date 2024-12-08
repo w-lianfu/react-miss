@@ -64,6 +64,11 @@ const Music = (props: IProps, state: IState) => {
           width={mvWidth} height={mvHeight} />
       </DBox>
       <DBox>
+        <DTypography variant="body1">遇</DTypography>
+        <ReactPlayer url='https://www.youtube.com/watch?v=QEqRjIN5JxY'
+          width={mvWidth} height={mvHeight} />
+      </DBox>
+      <DBox>
         <DTypography variant="body1">千千阙歌</DTypography>
         <ReactPlayer url='https://www.youtube.com/watch?v=n3B5XpRvyhI'
           width={mvWidth} height={mvHeight} />
