@@ -1,4 +1,5 @@
 import React, { useEffect, useState, SyntheticEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { styled } from '@mui/material/styles';
 import {
@@ -8,6 +9,7 @@ import {
 import {
   MdHome, MdLock, MdLockOpen, MdRefresh, MdStar,
   MdDashboard, MdArrowUpward, MdArrowDownward,
+  MdOutlineMusicVideo,
 } from 'react-icons/md';
 
 import lock, { toggleLock } from './store/app-lock';
@@ -25,6 +27,8 @@ const DStack = styled(Stack)({
 });
 
 const actions = [
+  { icon: <MdHome />, name: 'Home' },
+  { icon: <MdOutlineMusicVideo />, name: 'Music' },
   { icon: <MdLock />, name: 'Lock' },
   { icon: <MdRefresh />, name: 'Refresh' },
   { icon: <MdArrowDownward />, name: 'Bottom' },
@@ -32,6 +36,7 @@ const actions = [
 ];
 
 const AppDial = (props: IProps, state: IState) => {
+  const navi = useNavigate();
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
@@ -39,7 +44,9 @@ const AppDial = (props: IProps, state: IState) => {
   }, []);
 
   const onDial = (ev: SyntheticEvent, name: string) => {
-    if (name === 'Refresh') location.reload();
+    if (name === 'Home') navi('/');
+    else if (name === 'Music') navi('music');
+    else if (name === 'Refresh') location.reload();
     else if (name === 'Lock') toggleLock(true);
     else if (name === 'Top') {
       // Scroll to page top

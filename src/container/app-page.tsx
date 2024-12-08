@@ -10,6 +10,7 @@ import AppLeft from '@comp/app-left/index';
 import AppRight from '@comp/app-right/index';
 import AppNav from '@comp/app-nav/index';
 import Home from '@page/home/index';
+import Music from '@page/music/index';
 
 interface IProps {}
 interface IState {}
@@ -29,6 +30,7 @@ const AppPage = (props: IProps, state: IState) => {
     <Routes>
       <Route index={true} element={<Home />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/music" element={<Music />} />
       <Route path="*" element={<Home />} />
     </Routes>
   );
