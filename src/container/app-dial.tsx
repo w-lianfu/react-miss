@@ -9,7 +9,7 @@ import {
 import {
   MdHome, MdLock, MdLockOpen, MdRefresh, MdStar,
   MdDashboard, MdArrowUpward, MdArrowDownward,
-  MdOutlineMusicVideo,
+  MdOutlineMusicVideo, MdOutlineVideocam,
 } from 'react-icons/md';
 
 import lock, { toggleLock } from './store/app-lock';
@@ -29,6 +29,7 @@ const DStack = styled(Stack)({
 const actions = [
   { icon: <MdHome />, name: 'Home' },
   { icon: <MdOutlineMusicVideo />, name: 'Music' },
+  { icon: <MdOutlineVideocam />, name: 'MV' },
   { icon: <MdLock />, name: 'Lock' },
   { icon: <MdRefresh />, name: 'Refresh' },
   { icon: <MdArrowDownward />, name: 'Bottom' },
@@ -45,7 +46,8 @@ const AppDial = (props: IProps, state: IState) => {
 
   const onDial = (ev: SyntheticEvent, name: string) => {
     if (name === 'Home') navi('/');
-    else if (name === 'Music') navi('music');
+    else if (name === 'Music') navi('mp3');
+    else if (name === 'MV') navi('mv');
     else if (name === 'Refresh') location.reload();
     else if (name === 'Lock') toggleLock(true);
     else if (name === 'Top') {
