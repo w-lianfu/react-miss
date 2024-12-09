@@ -92,6 +92,10 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="secondary">伐木造船, 驶向有你的彼岸...</Button>
       </CStack>
       <DStack>
+        <Typography variant="body1">
+          可琪，爱上你是心的选择，它不受自由意志的控制，
+        </Typography>
+        <Typography variant="body1">我也没有办法啊...</Typography>
         <img src={Img01} ref={img1Ref} onClick={() => viewImg('keqi01')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
@@ -104,6 +108,10 @@ const Home = (props: IProps, state: IState) => {
         </Button>
       </DStack>
       <DStack>
+      <Typography variant="body1">一天有24小时</Typography>
+      <Typography variant="body1">一小时有60分钟</Typography>
+      <Typography variant="body1">一分钟有60秒</Typography>
+      <Typography variant="body1">我每时每分每秒都在想你...</Typography>
         <img src={Img02} ref={img2Ref} onClick={() => viewImg('keqi02')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
@@ -120,23 +128,13 @@ const Home = (props: IProps, state: IState) => {
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
-        <Button variant="contained" color="black">一天有24小时</Button>
-        <Button variant="contained" color="error">一小时有60分钟</Button>
-        <Button variant="contained" color="primary">一分钟有60秒</Button>
-        <Button variant="contained" color="secondary">我每时每分每秒都在想你...</Button>
-      </DStack>
-      <DStack>
-        <img src={Img04} ref={img4Ref} onClick={() => viewImg('keqi04')}
-          style={{ width: `${Size.imgWidth}rem` }}/>
-      </DStack>
-      <DStack>
         <Button variant="contained" color="black">很喜欢很喜欢一个人, 却不能在一起</Button>
         <Button variant="contained" color="warning">是怎样的心情?</Button>
         <Button variant="contained" color="error">没有后悔, 没有遗憾</Button>
         <Button variant="contained" color="secondary">只有对她止不住的思念...</Button>
       </DStack>
       <DStack>
-        <img src={Img05} ref={img5Ref} onClick={() => viewImg('keqi06')}
+        <img src={Img04} ref={img4Ref} onClick={() => viewImg('keqi04')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
@@ -145,6 +143,10 @@ const Home = (props: IProps, state: IState) => {
         <Button variant="contained" color="black">长梦而烧脑, 至思而灼心</Button>
         <Button variant="contained" color="secondary">虽长梦而不语</Button>
         <Button variant="contained" color="error">虽至思而不见...</Button>
+      </DStack>
+      <DStack>
+        <img src={Img05} ref={img5Ref} onClick={() => viewImg('keqi06')}
+          style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
       <DStack>
         <LoveButton variant="contained" color="black">愿此缘分至于今生</LoveButton>
@@ -199,11 +201,8 @@ const Home = (props: IProps, state: IState) => {
         <LoveButton variant="contained" color="error">有烦恼, 写成诗...</LoveButton>
       </DStack>
       <DStack>
-        <Button variant="contained" color="black">
-          追求技术之巅, 探索宇宙之秘...
-        </Button>
         <Button variant="contained" color="secondary">
-          志, 当立于青天白云之上, 方可不沾染尘埃...
+          追求技术之巅, 探索宇宙之秘...
         </Button>
         <Button variant="contained" color="black">
           我愿化为一道光, 穿越银河去旅行...

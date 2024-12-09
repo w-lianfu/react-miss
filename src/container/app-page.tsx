@@ -32,7 +32,6 @@ const AppPage = (props: IProps, state: IState) => {
       <Route index={true} element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/mv" element={<MV />} />
-      <Route path="/mp3" element={<MP3 />} />
       <Route path="*" element={<Home />} />
     </Routes>
   );

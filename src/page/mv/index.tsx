@@ -55,10 +55,6 @@ const Music = (props: IProps, state: IState) => {
           width={mvWidth} height={mvHeight} />
       </DBox>
       <DBox>
-        <ReactPlayer url='https://youtu.be/CHBIJhIp4Gc?si=RifuGUVTftHangpS'
-          width={mvWidth} height={mvHeight} />
-      </DBox>
-      <DBox>
         <DTypography variant="body1">好可惜</DTypography>
         <ReactPlayer url='https://www.youtube.com/watch?v=0IezNuAgkUU'
           width={mvWidth} height={mvHeight} />
@@ -74,13 +70,8 @@ const Music = (props: IProps, state: IState) => {
           width={mvWidth} height={mvHeight} />
       </DBox>
       <DBox>
-        <DTypography variant="body1">以后的以后</DTypography>
-        <ReactPlayer url='https://www.youtube.com/watch?v=slp9KfncMHw'
-          width={mvWidth} height={mvHeight} />
-      </DBox>
-      <DBox>
-        <DTypography variant="body1">偏偏喜欢你</DTypography>
-        <ReactPlayer url='https://www.youtube.com/watch?v=RmTAUDlcPSk'
+        <DTypography variant="body1">秋日私语 - Piano</DTypography>
+        <ReactPlayer url='https://www.youtube.com/watch?v=bQh_qjVNTTw'
           width={mvWidth} height={mvHeight} />
       </DBox>
       <DBox>

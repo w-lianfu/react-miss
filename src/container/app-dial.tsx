@@ -21,15 +21,14 @@ interface IState {}
 
 const DStack = styled(Stack)({
   position: 'fixed',
-  bottom: `${Size.appStatus}rem`,
-  right: 0,
+  bottom: `${Size.appStatus + 0.5}rem`,
+  right: `${Size.appRight + 0.5}rem`,
   display: 'flex',
 });
 
 const actions = [
   { icon: <MdHome />, name: 'Home' },
-  { icon: <MdOutlineMusicVideo />, name: 'Music' },
-  { icon: <MdOutlineVideocam />, name: 'MV' },
+  { icon: <MdOutlineMusicVideo />, name: 'MV' },
   { icon: <MdLock />, name: 'Lock' },
   { icon: <MdRefresh />, name: 'Refresh' },
   { icon: <MdArrowDownward />, name: 'Bottom' },
@@ -46,7 +45,6 @@ const AppDial = (props: IProps, state: IState) => {
 
   const onDial = (ev: SyntheticEvent, name: string) => {
     if (name === 'Home') navi('/');
-    else if (name === 'Music') navi('mp3');
     else if (name === 'MV') navi('mv');
     else if (name === 'Refresh') location.reload();
     else if (name === 'Lock') toggleLock(true);

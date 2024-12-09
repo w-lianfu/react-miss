@@ -32,8 +32,6 @@ const MP3 = (props: IProps, state: IState) => {
   return (
     <DPaper>
       <Typography variant="body1">Piano - 秋日私语</Typography>
-      <ReactPlayer controls={true} width={musicW} height={musicH}
-        url='https://www.dropbox.com/scl/fi/9lpqw5evk79w6d3ycncp7/piano.mp3?rlkey=tbwydygm2legk4jdp1d2ouzx5&st=9qfy1of2&dl=0' />
     </DPaper>
   );
 };
