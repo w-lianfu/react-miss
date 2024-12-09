@@ -95,7 +95,9 @@ const Home = (props: IProps, state: IState) => {
         <Typography variant="body1">
           可琪，爱上你是心的选择，它不受自由意志的控制，
         </Typography>
-        <Typography variant="body1">我也没有办法啊...</Typography>
+        <Typography variant="body1">
+          相反，它让自由意志有了牵挂，所以白天会思念你，晚上会梦到你...
+        </Typography>
         <img src={Img01} ref={img1Ref} onClick={() => viewImg('keqi01')}
           style={{ width: `${Size.imgWidth}rem` }}/>
       </DStack>
