@@ -30,7 +30,7 @@ const AppTop = (props: IProps, state: IState) => {
   }, []);
 
   return (
-    <DBox>诗为她而作, 泪为你而流...</DBox>
+    <DBox>我愿化为一道光, 穿越银河去旅行...</DBox>
   );
 };
 
