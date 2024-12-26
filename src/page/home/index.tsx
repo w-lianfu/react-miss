@@ -12,6 +12,7 @@ import Tool from '@tool/index';
 import Size from '@tool/size';
 import AppPage from '@con/app-page';
 import AppBox from '@con/app-box';
+import ImgSlick from './img-slick';
 
 interface IProps {}
 interface IState {}
@@ -82,6 +83,7 @@ const Home = (props: IProps, state: IState) => {
 
   return (
     <AppBox>
+      <ImgSlick />
       <CStack>
         <Button variant="contained" color="black">每天醒来为了什么?</Button>
         <Button variant="contained" color="secondary">伐木造船, 驶向梦想的彼岸...</Button>
